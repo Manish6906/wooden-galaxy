@@ -3,11 +3,22 @@ import React from 'react'
 function Login() {
   return (
     <>
-    <div>
-      <div className=''>
+    <div className='flex'>
+      <div className='w-2/4'>
         <img src="src\assets\loginImg.png" alt="" />
       </div>
-      <div></div>
+      <div className='w-2/4 py-5'>
+        <div>
+          <h1 className='text-5xl font-bold py-4 text-[#444B59]'>WELCOME</h1>
+          <h3 className='text-base text-[#444B59] pb-{10px}'>Don't have a account <span className='text-base text-[#B5B0AB]'>Sign up</span> </h3>
+        </div>
+        <div className='pt-[50px]'>
+            <label>
+              Userame:
+            </label>
+            <input type="text" name="name" />
+        </div>
+      </div>
     </div>
     </>
   )

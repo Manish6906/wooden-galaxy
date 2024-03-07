@@ -9,6 +9,7 @@ import Shop from "./Components/Shop";
 import OurStory from "./Components/OurStory";
 import Faq from "./Components/Faq";
 import Contact from "./Components/Contact"
+import Login from "./Pages/Login";
 const App = () => {
   return (
     <Router>
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/OurStory" element={<OurStory />} />
         <Route path="/Faq" element={<Faq />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/Login" element={<Login />} />
       </Routes>
     </Router>
   );
