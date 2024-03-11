@@ -11,10 +11,11 @@ function Login() {
         <div className='w-2/4 pl-[18rem] pt-[6rem]'>
           <div className='relative'>
             <img src="src\assets\loginImg.png" className='absolute z-40' alt="" />
-            <img src="src\assets\LoginImgback2.png" className='absolute z-30' alt="" />
-            <img src="src\assets\LoginImgback3.png" className='absolute z-20' alt="" />
+            <img src="src\assets\LoginImgback2.png" className='absolute z-320' alt="" />
+            <img src="src\assets\LoginImgback3.png" className='absolute z-30' alt="" />
             <img src="src\assets\loginImgback4.png" className='absolute z-10 top-48' alt="" />
           </div>
+
         </div>
         <div className='w-2/4 pr-[18rem] pt-[6rem]'>
           <div>
@@ -23,15 +24,15 @@ function Login() {
           </div>
           <div className='pt-[1rem] pl-[2rem]'>
             <form action="#" method='POST'>
-              <div class="mb-4">
-                <label class="block mb-1" for="username">Username</label>
+              <div className="mb-4">
+                <label className="block mb-1" for="username">Username</label>
                 <input type="text" id="username" className="w-full border-2 p-2 rounded-full outline-none" placeholder="deniel123@gmail.com" />
               </div>
-              <div class="mb-4">
-                <label class="block mb-1" for="password">Password</label>
+              <div className="mb-4">
+                <label className="block mb-1" for="password">Password</label>
                 <input type="password" id="password" className="w-full border-2 p-2 rounded-full outline-none" placeholder="••••••••" />
               </div>
-              <div class="mb-4 flex items-center justify-between">
+              <div className="mb-4 flex items-center justify-between">
                 <label className="flex items-center">
                   <input type="checkbox" className="rounded-full form-checkbox" />
                   <span className="ml-2">Remember me</span>
