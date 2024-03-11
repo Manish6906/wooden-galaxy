@@ -4,12 +4,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
-import Blog from "./Components/Blog";
-import Shop from "./Components/Shop";
-import OurStory from "./Components/OurStory";
-import Faq from "./Components/Faq";
-import Contact from "./Components/Contact"
 import Login from "./Pages/Login";
+import Blog from "./Pages/Blog";
+import Shop from "./Pages/Shop";
+import OurStory from "./Pages/OurStory";
+import Faq from "./Pages/Faq";
+import Contact from "./Pages/Contact"
+
 const App = () => {
   return (
     <Router>
