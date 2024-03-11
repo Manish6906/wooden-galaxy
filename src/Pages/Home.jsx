@@ -1,29 +1,22 @@
 import React from "react";
 import B_experience from "../Components/B_experience";
 import Navbar from "../Components/Navbar";
-// import Navbar from "../Components/Navbar";
-import OurStory from "../Components/OurStory";
+import AbhiCards from "../Components/AbhiCards";
 
 const Home = () => {
   return (
     <>
-    <div className="">
-      <Navbar/>
-    </div>
-    <div>
-    
-    </div>
-    <div>
-      <B_experience />
-    </div>
+      <div className="">
+        <Navbar />
+      </div>
+      <div>
+        <AbhiCards />
+      </div>
+      <div>
+        <B_experience />
+      </div>
     </>
   );
 };
-      {/* <Navbar/> */}
-    {/* <B_experience /> */}
-//     <OurStory />
-//   </div>
-//   )
-// }
 
 export default Home;
