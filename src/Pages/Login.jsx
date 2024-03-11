@@ -11,7 +11,7 @@ function Login() {
         <div className='w-2/4 pl-[18rem] pt-[6rem]'>
           <div className='relative'>
             <img src="src\assets\loginImg.png" className='absolute z-40' alt="" />
-            <img src="src\assets\LoginImgback2.png" className='absolute z-320' alt="" />
+            <img src="src\assets\LoginImgback2.png" className='absolute z-20' alt="" />
             <img src="src\assets\LoginImgback3.png" className='absolute z-30' alt="" />
             <img src="src\assets\loginImgback4.png" className='absolute z-10 top-48' alt="" />
           </div>
