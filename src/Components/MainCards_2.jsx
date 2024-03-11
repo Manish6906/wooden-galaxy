@@ -8,7 +8,7 @@ import {
   } from "@mui/material";
   
   import McardData from "./McardData";
-function MainCards() {
+function MainCards2() {
   return (
     <div>
       <div class="w-full flex justify-center">
@@ -46,4 +46,4 @@ function MainCards() {
   );
 }
 
-export default MainCards;
+export default MainCards2;

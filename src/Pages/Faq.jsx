@@ -73,7 +73,7 @@ const Faq = () => {
   <h1 className="font-bold text-3xl">Faq</h1>
   <ul className="mt-5 flex gap-1">
     <li><Link to="/" style={{ opacity: 1 }}>Home</Link></li>
-    <li style={{ opacity: 0.5 }}>></li>
+    <li style={{ opacity: 0.5 }}>&gt;</li>
     <li><Link to="/Faq" style={{ opacity: 0.5 }}>Faq</Link></li>
   </ul>
 </div>

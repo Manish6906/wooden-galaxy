@@ -1,7 +1,7 @@
 import React from "react";
 import rectangle from "../assets/Rectangle1451.png";
 import material from "../assets/Rectangle1446.png";
-import { FaLongArrowAltRight } from "react-icons/fa";
+// import { FaLongArrowAltRight } from "react-icons";
 import material_1 from "../assets/Group48095417.png";
 import material_2 from "../assets/Group48095419.png";
 
@@ -30,7 +30,7 @@ const B_experience = () => {
             </p>
             <a href="#" className="flex justify-center italic text-[#E58411]">
               More info
-              <FaLongArrowAltRight className="mt-[6px]" />
+              {/* <FaLongArrowAltRight className="mt-[6px]" /> */}
             </a>
           </div>
         </div>
@@ -50,7 +50,7 @@ const B_experience = () => {
             </p>
             <a href="#" className="flex justify-center italic text-[#E58411]">
               More info
-              <FaLongArrowAltRight className="mt-[6px]" />
+              {/* <FaLongArrowAltRight className="mt-[6px]" /> */}
             </a>
           </div>
 
