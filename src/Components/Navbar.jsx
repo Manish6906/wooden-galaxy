@@ -1,58 +1,3 @@
-// import React from "react";
-
-// import { IoMdLogIn } from "react-icons/io";
-// import Navimg from "../assets/nav bg.png";
-// import Trolley from "../assets/Trolley.png";
-// import Logo from "../assets/Logo.png";
-// import Wish from "../assets/Wish list.png";
-// const Navbar = () => {
-//   return (
-//     <>
-//       <div className="relative ">
-
-//         <div className="fixed w-full h-screen opacity-95">
-//           <img src={Navimg} alt="" className="w-full h-screen" />
-//         </div>
-
-//         <div className="h-24 p-4 flex text-white w-full justify-between  absolute z-[999] text-sm font-light">
-//           <div className=" ">
-//             <img src={Logo} alt="" className="h-12 w-24" />
-//           </div>
-
-//           <div className=" ">
-//             <ul className="flex gap-6  pt-2">
-//               <li className="asd">Home</li>
-//               <li className="asd">Shop</li>
-//               <li className="asd">Our Story</li>
-//               <li className="asd">Faq</li>
-//               <li className="asd">Blog</li>
-//               <li className="asd">Contact</li>
-//             </ul>
-//           </div>
-
-//           <div className=" flex justify-end ">
-//             <div className="flex gap-3 pb-5">
-//               <div className="flex items-center">
-//                 <IoMdLogIn size={25} color="blue" />
-//                 <h1>Login</h1>
-//               </div>
-//               <div className="flex items-center ">
-//                 <img src={Wish} alt="" className="h-4 w-6" />
-//               </div>
-//               <div className="flex items-center ">
-//                 <img src={Trolley} alt="" className="h-4 w-6" />
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// };
-
-// export default Navbar;
-
-
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { IoMdLogIn } from "react-icons/io";
@@ -71,9 +16,9 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="relative">
-        <div className="fixed w-full h-screen opacity-95">
-          <img src={Navimg} alt="" className="w-full h-screen" />
+      <div className="relative min-h-screen">
+        <div className="absolute w-full h-screen opacity-95" >
+          <img src={Navimg} alt="" className="w-full h-screen object-cover" />
         </div>
 
         <div className="h-24 p-4 flex text-white w-full justify-between absolute z-[999] text-sm font-light">
