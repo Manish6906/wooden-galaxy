@@ -1,18 +1,18 @@
 import React from "react";
 import B_experience from "../Components/B_experience";
 import Navbar from "../Components/Navbar";
-import OurStory from "./OurStory";
+import AbhiCards from "../Components/AbhiCards";
+import CheckOut from "./CheckOut";
 
 const Home = () => {
   return (
     <>
-    <div className="">
-      <Navbar/>
-    </div>
-    <div>
-      <B_experience />
-    </div>
+        {/* <Navbar />
+        <AbhiCards />
+        <B_experience /> */}
+        <CheckOut />
     </>
   );
 };
+
 export default Home;

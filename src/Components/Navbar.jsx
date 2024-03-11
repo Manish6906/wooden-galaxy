@@ -7,6 +7,7 @@ import Logo from "../assets/Logo.png";
 import Wish from "../assets/Wishlist.png";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 
+
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
