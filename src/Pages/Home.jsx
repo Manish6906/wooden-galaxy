@@ -1,7 +1,7 @@
 import React from "react";
 import B_experience from "../Components/B_experience";
 import Navbar from "../Components/Navbar";
-import Navbar from "../Components/Navbar";
+// import Navbar from "../Components/Navbar";
 import OurStory from "../Components/OurStory";
 
 const Home = () => {
@@ -11,6 +11,9 @@ const Home = () => {
       <Navbar/>
     </div>
     <div>
+    
+    </div>
+    <div>
       <B_experience />
     </div>
     </>
@@ -18,9 +21,9 @@ const Home = () => {
 };
       {/* <Navbar/> */}
     {/* <B_experience /> */}
-    <OurStory />
-  </div>
-  )
-}
+//     <OurStory />
+//   </div>
+//   )
+// }
 
 export default Home;
