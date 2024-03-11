@@ -102,7 +102,7 @@ const Navbar = () => {
             </button>
           </div>
 
-          <div className="flex justify-end hidden md:flex">
+          <div className="flex justify-end md:flex">
             <div className="flex gap-4 pb-5">
               <div className="flex items-center">
                 <IoMdLogIn size={25} color="blue" />
