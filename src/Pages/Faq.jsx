@@ -71,17 +71,7 @@ const Faq = () => {
           <img src={Nav} alt="" />
           
           <div className="absolute flex flex-col items-center justify-center">
-  <h1 className="font-bold text-3xl">Faq</h1>
-  <ul className="mt-5 flex gap-1">
-    <li><Link to="/" style={{ opacity: 1 }}>Home</Link></li>
-    <li style={{ opacity: 0.5 }}></li>
-    <li><Link to="/Faq" style={{ opacity: 0.5 }}>Faq</Link></li>
-  </ul>
 </div>
-
-          <img src={Nav} alt="" className="w-screen" />
-
-
           <div className="absolute flex flex-col items-center justify-center">
             <h1 className="font-bold text-3xl">Faq</h1>
             <ul className="mt-5 flex gap-1">
