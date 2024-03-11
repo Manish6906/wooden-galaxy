@@ -1,8 +1,9 @@
 import React from 'react'
+import AbhiCards from '../Components/AbhiCards'
 
 const Home = () => {
   return (
-    <div>Ho</div>
+    <div><AbhiCards/></div>
   )
 }
 
