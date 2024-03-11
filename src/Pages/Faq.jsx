@@ -67,18 +67,24 @@ const Faq = () => {
     <>
       <div>
         <div className="w-full h-50 flex justify-center items-center">
-          <img src={Nav} alt="" />
-          
+          <img src={Nav} alt="" className="w-screen" />
+
           <div className="absolute flex flex-col items-center justify-center">
-  <h1 className="font-bold text-3xl">Faq</h1>
-  <ul className="mt-5 flex gap-1">
-    <li><Link to="/" style={{ opacity: 1 }}>Home</Link></li>
-    <li style={{ opacity: 0.5 }}>></li>
-    <li><Link to="/Faq" style={{ opacity: 0.5 }}>Faq</Link></li>
-  </ul>
-</div>
-
-
+            <h1 className="font-bold text-3xl">Faq</h1>
+            <ul className="mt-5 flex gap-1">
+              <li>
+                <Link to="/" style={{ opacity: 1 }}>
+                  Home
+                </Link>
+              </li>
+              <li style={{ opacity: 0.5 }}>&gt;</li>
+              <li>
+                <Link to="/Faq" style={{ opacity: 0.5 }}>
+                  Faq
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div className="flex justify-center mt-7 ">
