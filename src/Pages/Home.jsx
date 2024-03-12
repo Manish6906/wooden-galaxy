@@ -7,9 +7,9 @@ import CheckOut from "./CheckOut";
 const Home = () => {
   return (
     <>
-        {/* <Navbar />
+        <Navbar />
         <AbhiCards />
-        <B_experience /> */}
+        <B_experience />
         <CheckOut />
     </>
   );
