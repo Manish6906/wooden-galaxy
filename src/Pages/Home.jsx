@@ -2,15 +2,18 @@ import React from "react";
 import B_experience from "../Components/B_experience";
 import Navbar from "../Components/Navbar";
 import AbhiCards from "../Components/AbhiCards";
-import CheckOut from "./CheckOut";
+import Footer from "../Components/Footer";
+import Testimonials from "../Components/Testimonials";
+
 
 const Home = () => {
   return (
     <>
-        {/* <Navbar />
+        <Navbar />
         <AbhiCards />
-        <B_experience /> */}
-        <CheckOut />
+        <B_experiene />
+        <Testimonials />
+        <Footer />
     </>
   );
 };
