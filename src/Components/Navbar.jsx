@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { IoMdLogIn } from "react-icons/io";
-import Navimg from "../assets/nav bg.png";
+import Navimg from "../assets/navbg.png";
 import Trolley from "../assets/Trolley.png";
 import Logo from "../assets/Logo.png";
-import Wish from "../assets/Wish list.png";
+import Wish from "../assets/Wishlist.png";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 
 
