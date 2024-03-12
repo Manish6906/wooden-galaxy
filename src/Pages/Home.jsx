@@ -7,10 +7,10 @@ import CheckOut from "./CheckOut";
 const Home = () => {
   return (
     <>
-        {/* <Navbar />
+        <Navbar />
         <AbhiCards />
-        <B_experience /> */}
-        <CheckOut />
+        <B_experience />
+        <CheckOut /> 
     </>
   );
 };
