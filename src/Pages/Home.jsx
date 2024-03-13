@@ -5,18 +5,16 @@ import AbhiCards from "../Components/AbhiCards";
 import Footer from "../Components/Footer";
 import Testimonials from "../Components/Testimonials";
 import SubFooter from "../Components/SubFooter";
-import OurStory from "./OurStory";
 
 const Home = () => {
   return (
     <>
-        {/* <Navbar />
+        <Navbar />
         <AbhiCards />
         <B_experience />
         <Testimonials />
         <SubFooter />
-        <Footer /> */}
-        <OurStory />
+        <Footer />
     </>
   );
 };
