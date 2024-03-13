@@ -17,7 +17,7 @@ import image3 from "../assets/testimonials/image_2.1.jpg"
 import image4 from "../assets/testimonials/image_3.png"
 import image3_1 from "../assets/testimonials/image_3.1.jpg"
 
-const S_testimonials = () => {
+const Testimonials = () => {
   return (
 
     // TESTIMONIAL SECTION
@@ -200,4 +200,4 @@ const S_testimonials = () => {
   )
 }
 
-export default S_testimonials
+export default Testimonials
