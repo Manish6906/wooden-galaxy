@@ -7,17 +7,17 @@ import Testimonials from "../Components/Testimonials";
 import SubFooter from "../Components/SubFooter";
 import CheckOut from "./CheckOut";
 import OurStory from "./OurStory";
+import Shop from "./Shop";
 
 const Home = () => {
   return (
     <>
-        {/* <Navbar />
+        <Navbar />
         <AbhiCards />
         <B_experience />
         <Testimonials />
         <SubFooter />
-        <Footer /> */}
-        <OurStory />
+        <Footer /> 
     </>
   );
 };
