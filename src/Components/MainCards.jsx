@@ -17,7 +17,7 @@ function MainCards() {
                 <CardActionArea>
                   <CardMedia
                     component="img"
-                    class="object-fill h-full w-full"
+                    className="object-fill h-full w-full"
                     image={cardData.imagescr}
                   />
                   <CardContent className="p-2 flex flex-col">
