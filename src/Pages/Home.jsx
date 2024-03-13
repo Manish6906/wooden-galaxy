@@ -6,6 +6,7 @@ import Footer from "../Components/Footer";
 import Testimonials from "../Components/Testimonials";
 import SubFooter from "../Components/SubFooter";
 import CheckOut from "./CheckOut";
+import OurStory from "./OurStory";
 
 const Home = () => {
   return (
@@ -16,7 +17,7 @@ const Home = () => {
         <Testimonials />
         <SubFooter />
         <Footer /> */}
-        <CheckOut />
+        <OurStory />
     </>
   );
 };
