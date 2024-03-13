@@ -10,13 +10,13 @@ export default function AbhiCards_2() {
             {MainCardData_2.map((cardData) => (
               <div
                 key={cardData.id}
-                className="bg-white shadow-md rounded-lg overflow-hidden"
+                className="bg-white shadow-md  overflow-hidden"
               >
                 <div className="relative">
                   <img
                     src={cardData.imagescr}
                     alt={cardData.heading}
-                    className="object-cover w-full h-56 "
+                    className="object-cover w-full h-full "
                     
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-2">

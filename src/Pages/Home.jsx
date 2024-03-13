@@ -18,7 +18,8 @@ const Home = () => {
         <Testimonials />
         <SubFooter />
         <Footer />  */}
-        <OurStory />
+        {/* <OurStory /> */}
+        <Shop/>
     </>
   );
 };
