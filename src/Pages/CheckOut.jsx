@@ -31,14 +31,14 @@ const CheckOut = () => {
                 <label> First Name </label><br />
                 <input
                   type="text"
-                  className="border-black border-2 opacity-50 rounded-md h-20 mt-2 md:mt-4 w-[211px] mr-4"
+                  className="border-black border-2 opacity-50 rounded-md h-[75px] mt-2 md:mt-4 w-[211px] mr-4"
                 />
               </div>
               <div className="flex-initial ">
                 <label> Last Name </label><br />
                 <input
                   type="text"
-                  className="border-black border-2 opacity-50 rounded-md h-20 mt-2 md:mt-4 w-[211px] mr-4"
+                  className="border-black border-2 opacity-50 rounded-md h-[75px] mt-2 md:mt-4 w-[211px] mr-4"
                 />
               </div>
             </div>
@@ -104,30 +104,32 @@ const CheckOut = () => {
             </div>
           </form>
         </div>
-        <div className="flex-initial w-[608px] h-[789px] top-[479px] left-[734px] ">
+        <div className="flex-initial w-[708px] h-[789px] top-[479px] left-[734px]">
         <div className="flex gap-80">
             <div>
-              <h1 className="w-[94px] h-[36px] font-medium size-[24px] leading-9">Product</h1>
-              <h1 className="opacity-50">Asgaard sofa X 1</h1>
-              <h1>Subtiotal</h1>
-              <h1>Total</h1>
+              <h1 className="mt-4 w-[94px] h-[36px] font-medium size-[24px] leading-9 text-2xl">Product</h1>
+              <h1 className="mt-4 opacity-50">Asgaard sofa X 1</h1>
+              <h1 className="mt-4 ">Subtiotal</h1>
+              <h1 className="mt-4 mb-4">Total</h1>
             </div>
-            <div>
-              <h1 className="font-medium size-[24px]">Subtotal</h1>
-              <h1>Rs. 250,000.00</h1>
-              <h1>Rs. 250,000.00</h1>
-              <h1 className="font-bold">Rs. 250,000.00</h1>
+            <div >
+              <h1 className="mt-4 font-medium size-[24px] leading-9 w-[103px] text-2xl">Subtotal</h1>
+              <h1 className="mt-6 text-base">Rs.250,000.00</h1>
+              <h1 className="mt-6 size-[16px] text-base">Rs.250,000.00</h1>
+              <p className="mb-4 mt-5 font-bold w-[178px] h-[36px] text-[#B88E2F;] text-2xl -ml-10">Rs.250,000.00</p>
             </div>
           </div>
           <hr />
           <div>
-            <h1>Direct Bank Transfer</h1>
-            <h1>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</h1>
-            <h1>Direct Bank Transfer</h1>
-            <h1>Cash On Delivery</h1>
-            <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.</p>
+            <input type="radio" name="radio" className="mt-3"/>   Direct Bank Transfer
+            <h1 className="opacity-50 mt-3">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</h1>
+           <div className="opacity-50">
+            <input type="radio" name="radio" className="opacity-50 mt-3"/>  Direct Bank Transfer <br />
+            <input type="radio" name="radio" className="opacity-50 mt-3"/>  Cash On Delivery</div>
+            
+            <p className="mt-4">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <span className="font-bold">privacy policy</span></p>
           </div>
-          <button className="rounded-2xl border-black border-2 ml-32 top-[1118px] left-[883px] w-[318px] h-[64px]">Place order</button>
+          <button className="rounded-2xl border-black border-2 ml-40 top-[1118px] left-[883px] w-[318px] h-[64px] mt-8">Place order</button>
         </div>
       </div>
     </>
