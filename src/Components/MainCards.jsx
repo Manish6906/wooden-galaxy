@@ -1,13 +1,8 @@
 import React from "react";
-import {
-    Card,
-    CardContent,
-    CardMedia,
-    Typography,
-    CardActionArea,
-  } from "@mui/material";
+
   
   import McardData from "./McardData";
+  
 function MainCards() {
   return (
     <div>

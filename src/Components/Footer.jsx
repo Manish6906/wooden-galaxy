@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (<footer
-  class="bg-zinc-50 text-center text-surface/75 lg:text-left">
+  className="bg-zinc-50 text-center text-surface/75 lg:text-left">
   <div
-    class="flex items-center justify-center border-neutral-200 p-6 lg:justify-between">
+    className="flex items-center justify-center border-neutral-200 p-6 lg:justify-between">
 
   </div>
 
-  <div class="mx-6 py-10 text-center md:text-left">
-    <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-      <div class="">
+  <div className="mx-6 py-10 text-center md:text-left">
+    <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <div className="">
         <h6
-          class="mb-4 italic flex items-center justify-center font-semibold  md:justify-start text-[#1E1E1E] text-3xl ml-24 pb-3">
+          className="mb-4 italic flex items-center justify-center font-semibold  md:justify-start text-[#1E1E1E] text-3xl ml-24 pb-3">
           
           Wooden Galaxy
         </h6>
@@ -23,51 +23,51 @@ function Footer() {
       </div>
       <div>
         <h6
-          class="mb-4 flex justify-center font-semibold md:justify-start text-[#F6973F] ml-24">
+          className="mb-4 flex justify-center font-semibold md:justify-start text-[#F6973F] ml-24">
           Services
         </h6>
-        <p class="mb-4 text-[#1E1E1E] font-semibold ml-24">
+        <p className="mb-4 text-[#1E1E1E] font-semibold ml-24">
           <Link to={'/Email'}>Email Marketing</Link>
         </p>
-        <p class="mb-4 text-[#1E1E1E] font-semibold ml-24">
+        <p className="mb-4 text-[#1E1E1E] font-semibold ml-24">
         <Link to={'/Campaigns'}>Campaigns</Link>
         </p>
-        <p class="mb-4 text-[#1E1E1E] font-semibold ml-24">
+        <p className="mb-4 text-[#1E1E1E] font-semibold ml-24">
           <Link to={'/Branding'}>Branding</Link>
         </p>
         
       </div>
       <div>
         <h6
-          class="mb-4 flex justify-center font-semibold md:justify-start text-[#F6973F] ml-16">
+          className="mb-4 flex justify-center font-semibold md:justify-start text-[#F6973F] ml-16">
           Furniture
         </h6>
-        <p class="mb-4 text-[#1E1E1E] font-semibold ml-16">
+        <p className="mb-4 text-[#1E1E1E] font-semibold ml-16">
         <Link to={'/Beds'}>Beds</Link>
         </p>
-        <p class="mb-4 text-[#1E1E1E] font-semibold ml-16">
+        <p className="mb-4 text-[#1E1E1E] font-semibold ml-16">
           <Link to={'/Chair'}>Chair</Link>
         </p>
-        <p class="mb-4 text-[#1E1E1E] font-semibold ml-16">
+        <p className="mb-4 text-[#1E1E1E] font-semibold ml-16">
         <Link to={'/All'}>All</Link>
         </p>
         
       </div>
       <div>
         <h6
-          class="mb-4 flex justify-center font-semibold md:justify-start text-[#F6973F]">
+          className="mb-4 flex justify-center font-semibold md:justify-start text-[#F6973F]">
           Follow Us
         </h6>
-        <p class="mb-4 flex items-center justify-center md:justify-start font-semibold text-[#1E1E1E] ml-18">
-          <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+        <p className="mb-4 flex items-center justify-center md:justify-start font-semibold text-[#1E1E1E] ml-18">
+          <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
           <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M8.7357 3.29509H10.5851V0.139742C10.2661 0.0967442 9.16872 0 7.89075 0C5.22424 0 3.39761 1.643 3.39761 4.66274V7.44186H0.455078V10.9693H3.39761V19.845H7.00529V10.9701H9.82881L10.277 7.44269H7.00445V5.01251C7.00529 3.99297 7.28553 3.29509 8.7357 3.29509Z" fill="#1E2833"/>
 </svg>
           </span>
           <Link to={'/Facebook'}>Facebook</Link>
         </p>
-        <p class="mb-4 flex items-center justify-center md:justify-start font-semibold text-[#1E1E1E] ml-18">
-          <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+        <p className="mb-4 flex items-center justify-center md:justify-start font-semibold text-[#1E1E1E] ml-18">
+          <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
 <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20.2755 1.881C19.5331 2.2 18.7421 2.41144 17.9173 2.51411C18.7658 2.01789 19.4133 1.23811 19.7177 0.298222C18.9267 0.760222 18.0533 1.08656 17.1226 1.26867C16.3715 0.485222 15.3009 0 14.1331 0C11.8673 0 10.0432 1.80156 10.0432 4.01011C10.0432 4.32789 10.0706 4.63344 10.138 4.92433C6.73558 4.76178 3.72492 3.16433 1.70242 0.730889C1.34933 1.331 1.14221 2.01789 1.14221 2.75733C1.14221 4.14578 1.87211 5.37656 2.96009 6.08911C2.30256 6.07689 1.6575 5.88989 1.11102 5.59533C1.11102 5.60756 1.11102 5.62344 1.11102 5.63933C1.11102 7.58756 2.52964 9.20578 4.38994 9.57856C4.0568 9.66778 3.69373 9.71056 3.31693 9.71056C3.05491 9.71056 2.7904 9.69589 2.54211 9.64211C3.07238 11.2298 4.57709 12.397 6.36627 12.4349C4.97385 13.5019 3.20588 14.1448 1.29193 14.1448C0.956306 14.1448 0.634403 14.1301 0.3125 14.0898C2.12539 15.235 4.2739 15.8889 6.59085 15.8889C14.1219 15.8889 18.2392 9.77778 18.2392 4.48067C18.2392 4.30344 18.233 4.13233 18.2243 3.96244C19.0365 3.39778 19.719 2.69256 20.2755 1.881Z" fill="#1E2833"/>
 </svg>
@@ -75,8 +75,8 @@ function Footer() {
           </span>
           <Link to={'/Twitter'}>Twitter</Link>
         </p>
-        <p class="mb-4 flex items-center justify-center md:justify-start font-semibold text-[#1E1E1E] ml-18">
-          <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+        <p className="mb-4 flex items-center justify-center md:justify-start font-semibold text-[#1E1E1E] ml-18">
+          <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
           <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="#1E2833"
@@ -92,9 +92,9 @@ function Footer() {
     </div>
   </div>
 
-  <div class="p-6 text-end flex justify-end">
+  <div className="p-6 text-end flex justify-end">
     <span className='mx-16 text-[#1E1E1E] font-semibold'><Link to={'/Terms & Conditions'}>Terms & Conditions</Link></span>
-    <p class="font-semibold mr-36 text-[#1E1E1E]" href="https://tw-elements.com/"
+    <p className="font-semibold mr-36 text-[#1E1E1E]" href="https://tw-elements.com/"
       ><Link to={'/Privacy Policy'}>Privacy Policy</Link></p>
   </div>
 </footer>
