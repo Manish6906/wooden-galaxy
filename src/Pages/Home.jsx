@@ -12,13 +12,14 @@ import Shop from "./Shop";
 const Home = () => {
   return (
     <>
-        {/* <Navbar />
-        <AbhiCards />
+        <Navbar />
+        {/* <AbhiCards /> */}
         <B_experience />
         <Testimonials />
         <SubFooter />
-        <Footer />  */}
-        <OurStory />
+        <Footer /> 
+        {/* <OurStory /> */}
+        {/* <CheckOut /> */}
     </>
   );
 };
