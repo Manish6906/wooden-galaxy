@@ -1,37 +1,29 @@
 import React from "react";
+import McardData from "./McardData";
 
-  
-  import McardData from "./McardData";
-  
 function MainCards() {
   return (
     <div>
-      <div class="w-full flex justify-center">
-        <div class="w-full md:w-4/5 lg:w-8/12">
-          <div class="grid grid-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 m-3">
+      <div className="w-full flex justify-center">
+        <div className="w-full md:w-4/5 lg:w-8/12">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 m-3">
             {McardData.map((cardData) => (
               <div
                 key={cardData.id}
-                class="bg-white shadow-md rounded-lg overflow-hidden"
+                className="bg-white shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105"
               >
-                <CardActionArea>
-                  <CardMedia
-                    component="img"
-                    className="object-fill h-full w-full"
-                    image={cardData.imagescr}
+                <div className="overflow-hidden">
+                  <img
+                    className="object-cover w-full h-full"
+                    src={cardData.imagescr}
+                    alt={cardData.heading}
                   />
-                  <CardContent className="p-2 flex flex-col">
-                    <Typography gutterBottom variant="small">
-                      {cardData.heading}
-                    </Typography>
-                    <Typography gutterBottom variant="small">
-                      {cardData.para}
-                    </Typography>
-                    <Typography gutterBottom variant="small">
-                      {cardData.price}
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
+                </div>
+                <div className="p-2 flex flex-col">
+                  <p className="text-sm font-medium">{cardData.heading}</p>
+                  <p className="text-sm">{cardData.para}</p>
+                  <p className="text-sm">{cardData.price}</p>
+                </div>
               </div>
             ))}
           </div>
