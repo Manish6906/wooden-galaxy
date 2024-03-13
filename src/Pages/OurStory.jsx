@@ -31,7 +31,7 @@ const OurStory = () => {
           furniture collection."
         </h3>
 
-        <div className="flex flex-col justify-end sm:flex-row items-center mt-8 sm:mt-10 sm:mx-auto ">
+        <div className="flex flex-col justify-end max-[640px]: sm:flex-row items-center mt-8 sm:mt-10 sm:mx-auto ">
           <img className="max-size-[748px] mt-6 -ml-3 md:-ml-10" src={img2} alt="image" />
           <div className=" mt-6 lg:mt-0 text-center">
             <p className="text-sm sm:text-lg lg:text-2xl font-normal">
