@@ -52,7 +52,7 @@ const McardData = [
         imagescr : img1,
         heading: "Respira",
         para: "Six seated Sofa",
-        price: " RP 9000.00"
+        price: "Rs 9000.00"
     },    
 
       {
@@ -60,7 +60,7 @@ const McardData = [
         imagescr : img6,
         heading: "Lolito",
         para: "Luxuri Big Sofa ",
-        price: " RP 9000.000"
+        price: "Rs 9000.000"
     },
 
 
@@ -69,7 +69,7 @@ const McardData = [
         imagescr : img8,
         heading: "Slytherine",
         para: " stylish cafe chair",
-        price: " RP 2500.000"
+        price: "Rs 2500.000"
     },
     
 
@@ -78,10 +78,111 @@ const McardData = [
         imagescr : img9,
         heading: "Laviosa ",
         para: " stylish cafe chair",
-        price: " RP 2500.000"
+        price: "Rs 2500.000"
     },
     
   
+    {
+        id:10,
+        imagescr : img1,
+        heading: "Respira",
+        para: "Six seated Sofa",
+        price: "Rs 9000.00"
+    },    
+
+      {
+        id:60,
+        imagescr : img6,
+        heading: "Lolito",
+        para: "Luxuri Big Sofa ",
+        price: "Rs 9000.000"
+    },
+
+
+    {
+        id:80,
+        imagescr : img8,
+        heading: "Slytherine",
+        para: " stylish cafe chair",
+        price: "Rs 2500.000"
+    },
+    
+
+    {
+        id:90,
+        imagescr : img9,
+        heading: "Laviosa ",
+        para: " stylish cafe chair",
+        price: "Rs 2500.000"
+    },
+ 
+    {
+        id:21,
+        imagescr : img1,
+        heading: "Respira",
+        para: "Six seated Sofa",
+        price: "Rs 9000.00"
+    },    
+
+      {
+        id:26,
+        imagescr : img6,
+        heading: "Lolito",
+        para: "Luxuri Big Sofa ",
+        price: "Rs 9000.000"
+    },
+
+
+    {
+        id:28,
+        imagescr : img8,
+        heading: "Slytherine",
+        para: " stylish cafe chair",
+        price: "Rs 2500.000"
+    },
+    
+
+    {
+        id:29,
+        imagescr : img9,
+        heading: "Laviosa ",
+        para: " stylish cafe chair",
+        price: "Rs 2500.000"
+    },
+  
+    {
+        id:31,
+        imagescr : img1,
+        heading: "Respira",
+        para: "Six seated Sofa",
+        price: "Rs 9000.00"
+    },    
+
+      {
+        id:36,
+        imagescr : img6,
+        heading: "Lolito",
+        para: "Luxuri Big Sofa ",
+        price: "Rs 9000.000"
+    },
+
+
+    {
+        id:38,
+        imagescr : img8,
+        heading: "Slytherine",
+        para: " stylish cafe chair",
+        price: "Rs 2500.000"
+    },
+    
+
+    {
+        id:39,
+        imagescr : img9,
+        heading: "Laviosa ",
+        para: " stylish cafe chair",
+        price: "Rs 2500.000"
+    },
     
    
 ]
