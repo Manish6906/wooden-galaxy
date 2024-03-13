@@ -16,7 +16,8 @@ const Home = () => {
         <Testimonials />
         <SubFooter />
         <Footer /> */}
-        <CheckOut/>
+        {/* <CheckOut/> */}
+        
     </>
   );
 };
