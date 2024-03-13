@@ -24,7 +24,9 @@ const CheckOut = () => {
       </div>
       <div className="flex flex-row-reverse">
         <div className="flex flex-col md:flex-row">
+
           {/* div for the billing part */}
+          {/ div for the billing part /}
           <div className="flex gap-80 pl-60 mt-12">
             <div>
               <h1>Product</h1>
