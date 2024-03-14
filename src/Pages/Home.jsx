@@ -10,18 +10,12 @@ import SubFooter from "../Components/SubFooter";
 const Home = () => {
   return (
     <>
-        {/* <Navbar />
+        <Navbar />
         <AbhiCards />
         <B_experience />
         <Testimonials />
         <SubFooter />
-
-        <Footer />  */}
-        {/* <OurStory /> */}
-        <Shop/>
-
-        <Footer /> 
-
+        <Footer />  
     </>
   );
 };
