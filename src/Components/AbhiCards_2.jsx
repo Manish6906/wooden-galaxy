@@ -1,49 +1,56 @@
-import React from 'react'
-// import MainCards2 from './MainCards_2'
-
+import React from "react";
+import MainCardData_2 from "./MainCardData_2";
+// import McardData from "./McardData";
 export default function AbhiCards_2() {
   return (
-
-
     <div>
+    <div className="w-full flex justify-center">
+      <div className="w-full md:w-4/5 lg:w-8/12">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 m-3">
+          {MainCardData_2.map((cardData) => (
+            <div
+              key={cardData.id}
+              className="bg-white shadow-md  overflow-hidden transition-transform transform hover:scale-105"
+            >
+              <div className="overflow-hidden">
+                <img
+                  className="object-cover w-full h-full"
+                  src={cardData.imagescr}
+                  alt={cardData.heading}
+                />
+              </div>
+              <div className="p-2 flex flex-col">
+                <p className="text-sm font-medium">{cardData.heading}</p>
+                <p className="text-sm">{cardData.para}</p>
+                <p className="text-sm">{cardData.price}</p>
+              </div>
+            </div>
+            
+          ))}
+        </div>
+      </div>
+    {/*  div for buttons  */}
+    </div>
 
-      <div className="flex justify-center">
+    <div className="px-10 py-5 flex  w-[400px] flex-wrap mx-auto">
+    <button class=" border-yellow-600  bg-[#B88E2F] rounded-md text-white font-bold px-4 py-2 flex mx-auto ">
+  1
+</button>
 
-<div className="w-full md:w-4/5 lg:w-8/12">
+<button class=" border-yellow-100 bg-[#F9F1E7] rounded-md  px-4 py-2 flex mx-auto ">
+  2
+</button>
 
-<div className="grid grid-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 m-3">
+<button class=" border-yellow-600 bg-[#F9F1E7] rounded-md  px-4 py-2 flex mx-auto ">
+  3
+</button>
 
-   {McardData.map((cardData) => ( 
-
-<div key={cardData.id} className="bg-white shadow-md rounded-lg overflow-hidden" > 
-  
-   <div className="relative"> <img src={cardData.imagescr} alt={cardData.heading} className="object-cover w-fu h-56" />
-
-    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-2">
-
-    <div className="flex flex-col"> 
-
-    <div className="text-white"> 
-
-    <p className="text-xs">{cardData.heading}</p>
-
-    <p className="text-xs">{cardData.para}</p> 
-
-    <p className="text-xs">{cardData.price}</p>
-
-     </div> 
-          </div> 
-                </div> 
-                      </div> 
-                              </div> 
-     ))} 
-                                        </div> 
-                                              </div> 
-                                                      </div>
-      );
+<button class="  bg-[#F9F1E7] rounded-md   px-4 py-2 flex mx-auto ">
+  Next
+</button>
 
     </div>
 
-
-  )
+  </div>
+  );
 }

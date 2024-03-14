@@ -13,7 +13,7 @@ const McardData = [
         imagescr : img1,
         heading: "Respira",
         para: "Six seated Sofa",
-        price: " RP 9000.00"
+        price: " Rs 9000.00"
     },
     
     {
@@ -21,7 +21,7 @@ const McardData = [
         imagescr : img2,
         heading: "Grifo",
         para: "Night Lamp",
-        price: " RP 2500.00"
+        price: " Rs 2500.00"
     },
 
     {
@@ -29,7 +29,7 @@ const McardData = [
         imagescr : img3,
         heading: "Muggo",
         para: "Small Muggo  Sofa Set",
-        price: " RP 25,000.00"
+        price: " Rs 25,000.00"
     },
 
     {
@@ -37,7 +37,7 @@ const McardData = [
         imagescr : img4,
         heading: "Pingky",
         para: "Primuem Sofa Set",
-        price: " RP 7,000.000"
+        price: " Rs 7,000.000"
     },
 
     {
@@ -45,7 +45,7 @@ const McardData = [
         imagescr : img5,
         heading: "Potty",
         para: "stylesh cafe Sofa",
-        price: " RP 8000.00"
+        price: " Rs 8000.00"
     },
 
     {
@@ -53,7 +53,7 @@ const McardData = [
         imagescr : img6,
         heading: "Lolito",
         para: "Luxuri Big Sofa ",
-        price: " RP 9000.000"
+        price: " Rs 9000.000"
     },
    
     
@@ -63,7 +63,7 @@ const McardData = [
         imagescr : img8,
         heading: "Slytherine",
         para: " stylish cafe chair",
-        price: " RP 2500.000"
+        price: " Rs 2500.000"
     },
     
 
@@ -72,7 +72,7 @@ const McardData = [
         imagescr : img9,
         heading: "Laviosa ",
         para: " stylish cafe chair",
-        price: " RP 2500.000"
+        price: " Rs 2500.000"
     },
     
 ]
