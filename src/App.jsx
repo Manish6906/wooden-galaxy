@@ -11,6 +11,7 @@ import Shop from "./Pages/Shop";
 import OurStory from "./Pages/OurStory";
 import Faq from "./Pages/Faq";
 import Contact from "./Pages/Contact"
+import Single_product from "./Pages/Single_product";
 
 const App = () => {
   return (
@@ -26,7 +27,7 @@ const App = () => {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Signup" element={<Signup />} />
-
+        <Route path="/Single_product" element={<Single_product />} />
       </Routes>
     </Router>
   );
