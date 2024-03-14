@@ -5,7 +5,7 @@ function MainCards() {
   return (
     <div>
       <div className="w-full flex justify-center">
-        <div className="w-full md:w-4/5 lg:w-8/12">
+        <div className="w-full px-[5%]">
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 m-3">
             {McardData.map((cardData) => (
               <div
