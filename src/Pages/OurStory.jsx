@@ -2,6 +2,7 @@ import React from "react";
 import img from "../assets/OurStory.png";
 import img1 from "../assets/OurStory2.png";
 import img2 from "../assets/OurStory3.png";
+import backimg from "../assets/Back.png"
 import { Link } from "react-router-dom";
  
 
@@ -36,7 +37,7 @@ const OurStory = () => {
         </div>
       </div>
 
-      <div className="w-full ">
+      <div className="w-full bg-opacity-50"  style={{ backgroundImage: `url(${backimg})` }}>
         <p className="text-center mt-6 sm:mt-8 lg:mt-10 lg:font-bold font-outline-2 sm:text-5xl lg:text-6xl ">
           The Future Of Wooden Galaxy
         </p>
