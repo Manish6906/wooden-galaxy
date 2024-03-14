@@ -6,15 +6,22 @@ import Footer from "../Components/Footer";
 import Testimonials from "../Components/Testimonials";
 import SubFooter from "../Components/SubFooter";
 
+
 const Home = () => {
   return (
     <>
-        <Navbar />
+        {/* <Navbar />
         <AbhiCards />
         <B_experience />
         <Testimonials />
         <SubFooter />
-        <Footer />
+
+        <Footer />  */}
+        {/* <OurStory /> */}
+        <Shop/>
+
+        <Footer /> 
+
     </>
   );
 };
