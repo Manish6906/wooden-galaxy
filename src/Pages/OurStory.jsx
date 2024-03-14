@@ -2,6 +2,9 @@ import React from "react";
 import img from "../assets/OurStory.png";
 import img1 from "../assets/OurStory2.png";
 import img2 from "../assets/OurStory3.png";
+import { Link } from "react-router-dom";
+ 
+
 const OurStory = () => {
   return (
     <div className="w-full overflow-hidden">
@@ -16,7 +19,19 @@ const OurStory = () => {
             Our Story
           </p>
           <p className="text-sm">
-            Home <strong>&gt;</strong> Our Story
+          <ul className="mt-5 flex gap-1">
+              <li>
+                <Link to="/" style={{ opacity: 1 }}>
+                  Home
+                </Link>
+              </li>
+              <li style={{ opacity: 0.5 }}>&gt;</li>
+              <li>
+                <Link to="/OurStory" style={{ opacity: 0.5 }}>
+                  Our Story
+                </Link>
+              </li>
+            </ul>
           </p>
         </div>
       </div>
