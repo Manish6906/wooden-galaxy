@@ -6,6 +6,7 @@ import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import Login from "./Pages/Login";
 import Blog from "./Pages/Blog";
+import Signup from "./Pages/Signup";
 import Shop from "./Pages/Shop";
 import OurStory from "./Pages/OurStory";
 import Faq from "./Pages/Faq";
@@ -24,6 +25,8 @@ const App = () => {
         <Route path="/Faq" element={<Faq />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Login" element={<Login />} />
+        <Route path="/Signup" element={<Signup />} />
+
       </Routes>
     </Router>
   );
