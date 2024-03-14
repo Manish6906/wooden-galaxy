@@ -4,46 +4,65 @@ import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import { FaApple } from "react-icons/fa";
 
+import LoginImg from "../assets/Login/LoginImg1.png"
+
 function Login() {
   return (
     <>
-      <div className='flex'>
-        <div className='w-2/4 pl-[18rem] pt-[6rem]'>
-          <div className='relative'>
-            <img src="src\assets\loginImg.png" className='absolute z-40' alt="" />
-            <img src="src\assets\LoginImgback2.png" className='absolute z-20' alt="" />
-            <img src="src\assets\LoginImgback3.png" className='absolute z-30' alt="" />
-            <img src="src\assets\loginImgback4.png" className='absolute z-10 top-48' alt="" />
+
+      {/* TWO MAIN DIV LEFT(IMAGES) & RIGHT(CONTENT) LEFT HIDDEN ON MOBILE VIEW*/}
+      <div className='flex justify-center md:justify-normal '>
+
+        {/* LEFT CONTENT */}
+        {/* HIDDEN ON MOBILE VIEW  */}
+        <div className='hidden md:block md:h-screen'>
+          <img src={LoginImg} alt="" />
+        </div>
+
+        {/* RIGHT-CONTENT */}
+        {/* HEADING */}
+        <div className='mt-14 md:mt-0 md:w-1/2 md:ml-6'>
+          <div className='text-center md:text-left md:px-8'>
+
+            <h1 className='md:hidden text-4xl font-bold py-4 text-[#444B59]'>WOODEN GALAXY</h1>
+            <h1 className='hidden md:block text-6xl font-bold py-4 text-[#444B59]'>WELCOME</h1>
+
+            <h3 className='text-base mt-2 text-[#444B59] pb-{10px}'>Don't have a account <span className='text-base text-[#B5B0AB]'>Sign up</span> </h3>
+
           </div>
 
-        </div>
-        <div className='w-2/4 pr-[18rem] pt-[6rem]'>
-          <div>
-            <h1 className='text-5xl font-bold py-4 text-[#444B59]'>WELCOME</h1>
-            <h3 className='text-base text-[#444B59] pb-{10px}'>Don't have a account <span className='text-base text-[#B5B0AB]'>Sign up</span> </h3>
-          </div>
-          <div className='pt-[1rem] pl-[2rem]'>
-            <form action="#" method='POST'>
+          {/* USERNAME AND INPUTFIELD */}
+          <div className='mt-7'>
+            <form action="" method="post" className='md:px-8'>
               <div className="mb-4">
-                <label className="block mb-1" for="username">Username</label>
-                <input type="text" id="username" className="w-full border-2 p-2 rounded-full outline-none" placeholder="deniel123@gmail.com" />
+                <label className="block my-3 text-2xl" for="username">Username</label>
+                <input type="text" id="username" className="w-full border-2 border-[#B5B0AB] p-2 rounded-full md:h-14" placeholder="deniel123@gmail.com" />
               </div>
+
+              {/* PASSWORD AND INPUTFIELD */}
               <div className="mb-4">
-                <label className="block mb-1" for="password">Password</label>
-                <input type="password" id="password" className="w-full border-2 p-2 rounded-full outline-none" placeholder="••••••••" />
+                <label className="block my-3 text-2xl" for="password">Password</label>
+                <input type="password" id="password" className="w-full border-2 border-[#B5B0AB]  p-2 rounded-full md:h-14 outline-none" placeholder="••••••••" />
               </div>
-              <div className="mb-4 flex items-center justify-between">
+
+              {/* REMEMBER ME and FORGOT PASSWORD */}
+              <div className="mt-9 flex items-center justify-between">
                 <label className="flex items-center">
                   <input type="checkbox" className="rounded-full form-checkbox" />
-                  <span className="ml-2">Remember me</span>
+                  <span className="pl-2">Remember me</span>
                 </label>
-                <p className="text-sm hover:underline">Forget password?</p>
+                <p className="hover:underline">Forgot password?</p>
               </div>
-              <button className="w-full border-2 p-2 rounded-full outline-none text-[white] border-[#B5B0AB] bg-[#B5B0AB]">Sign In</button>
+
+              {/* SIGN IN Button  */}
+              <button className="w-full mt-6 border-2 p-2 rounded-full outline-none text-[white] border-[#B5B0AB] md:h-14 bg-[#B5B0AB]">Sign In</button>
+
               <div className="mt-4 flex items-center justify-center">
                 <hr className="w-28 decoration-[#C8D3F9]" /> <span className='p-2 mb-1'>or continue with</span> <hr className="w-28" />
               </div>
-              <div className="flex justify-evenly mt-4">
+
+              {/* GOOGLE FACEBOOK IOS logo */}
+              <div className="flex justify-evenly mt-6">
                 <button type="button" className="rounded-lg border-2 border-gray-200 p-2">
                   <FcGoogle className='text-3xl mx-3' />
                 </button>
@@ -57,8 +76,10 @@ function Login() {
 
             </form>
           </div>
+
         </div>
       </div>
+
     </>
   )
 }
