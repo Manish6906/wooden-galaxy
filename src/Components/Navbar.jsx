@@ -14,9 +14,9 @@ const Navbar = () => {
     setShowMenu(!showMenu);
   };
 
+  
   return (
     <>
-<<<<<<< HEAD
       <div
         className="relative h-[1084px] "
         style={{
@@ -61,7 +61,7 @@ const Navbar = () => {
                 </ul>
               </div>
             </div>
-            <div>
+            {/* <div>
               <div className="flex gap-4 mt-2">
                 <div className="flex items-center">
                   <IoMdLogIn size={25} color="blue" /> 
@@ -77,24 +77,9 @@ const Navbar = () => {
                   <img src={Trolley} alt="" className="h-6 w-7" />
                 </div>
               </div>
-=======
-      {/* <div style="background-image: url()"> */}
-        <div className="relative min-h-screen " >
-          <div className="absolute opacity-95" >
-          <img src={Navimg} alt="" className="w-screen h-screen md:w-screen md:h-screen object-cover" />
-        </div>
+            </div> */}
 
-{/* make two divs in mobile view left would be the logo and right would be dropdown menu and the three
- logos and in the right ddiv make the dropdown toggleMenu smaller  */}
-
-          <div className="h-24 p-4 flex text-white w-full justify-between absolute text-sm font-light">
-
-            <div >
-              <img src={Logo} alt="" className="h-12 w-24" />
->>>>>>> 381698cdd4124a33f7691809dda3149e7df950dd
-            </div>
-
-            <div className={`md:flex ${showMenu ? 'block' : 'hidden'}`}>
+            {/* <div className={`md:flex ${showMenu ? 'block' : 'hidden'}`}>
               <ul className="flex gap-6 pt-2">
                 <Link to="/">Home</Link>
                 <Link to="/Shop">Shop</Link>
@@ -103,16 +88,16 @@ const Navbar = () => {
                 <Link to="/Blog">Blog</Link>
                 <Link to="/Contact">Contact</Link>
               </ul>
-            </div>
+            </div> */}
 
-
+{/* 
             <div className="flex md:hidden">
               <button
                 onClick={toggleMenu}
                 className="text-white focus:outline-none">
                 <AiOutlineMenuUnfold size={45} />
               </button>
-            </div>
+            </div> */}
 
             {/* <div className="flex justify-end md:flex"> */}
               <div className="flex gap-4 pb-5">
@@ -131,11 +116,8 @@ const Navbar = () => {
 
 
           </div>
-<<<<<<< HEAD
         </div>
 
-        {/* <div class="flex justify-center">
-          <h1 class="absolute text-white text-2xl md:text-3xl lg:text-4xl font-bold text-center mt-32 md:mt-32 lg:mt-36 italic"> */}
         <div class="flex justify-center">
           <h1 class="absolute text-white text-[40px] md:text-[50px] lg:text-[60px] font-bold text-center mt-32 md:mt-32 lg:mt-36 italic">
             Make Your Interior More <br /> Minimalist & Modern
@@ -151,16 +133,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-=======
-
-
-
-          <div className="flex justify-center ">
-            <h1 className="absolute z-[999] text-white text-5xl font-bold text-center mt-44">Make Your Interior More <br /> Minimalist & Modern </h1>
-          </div>
-        </div>
-      {/* </div> */}
->>>>>>> 381698cdd4124a33f7691809dda3149e7df950dd
     </>
   );
 };
