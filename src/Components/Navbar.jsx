@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="relative min-h-screen " >
           <div className="absolute opacity-95" >
           <img src={Navimg} alt="" className="w-screen h-screen md:w-screen md:h-screen object-cover" />
-        </div> */}
+        </div>
 
         {/* make two divs in mobile view left would be the logo and right would be dropdown menu and the three
  logos and in the right ddiv make the dropdown toggleMenu smaller  */}
