@@ -18,8 +18,8 @@ const Navbar = () => {
   return (
     <>
       {/* <div style="background-image: url()"> */}
-      <div className="relative w-full h-full bg-no-repeat" style={{ backgroundImage: `url(${Navimg})` }} >
-        {/* <div className="absolute opacity-95" >
+        <div className="relative min-h-screen " >
+          <div className="absolute opacity-95" >
           <img src={Navimg} alt="" className="w-screen h-screen md:w-screen md:h-screen object-cover" />
         </div> */}
 
