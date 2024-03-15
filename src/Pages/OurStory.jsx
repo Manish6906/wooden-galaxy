@@ -37,16 +37,17 @@ const OurStory = () => {
         </div>
       </div>
 
-      <div className="w-full bg-opacity-50"  style={{ backgroundImage: `url(${backimg})` }}>
+      <div className="w-full ">
         <p className="text-center mt-6 sm:mt-8 lg:mt-10 lg:font-bold font-outline-2 sm:text-5xl lg:text-6xl ">
           The Future Of Wooden Galaxy
         </p>
 
-        <h3 className="mb-3 sm:mb-4 lg:mb-5 text-center text-md sm:text-lg lg:text-2xl sm:mx-auto ml-3 mr-3 mt-2">
+        <h3 className="mb-3 sm:mb-4 lg:mb-0 text-center text-md sm:text-lg lg:text-2xl sm:mx-auto ml-3 mr-3 mt-2">
           "Where comfort meets craftsmanship: Wooden Galaxy's celestial <br />
           furniture collection."
         </h3>
 
+        <div className="bg-opacity-50 bg-cover lg:pt-20"  style={{ backgroundImage: `url(${backimg})` }}>
         <div className="flex flex-col justify-end sm:flex-row items-center mt-8 sm:mt-10 sm:mx-auto ">
           <img className="max-size-[748px] mt-6 -ml-3 md:-ml-10" src={img1} alt="image" />
           <div className=" mt-6 lg:mt-0 text-center">
@@ -74,7 +75,7 @@ const OurStory = () => {
         </div>
 
         <div className="flex flex-col justify-end sm:flex-row items-center mt-8 sm:mt-10 sm:mx-auto ">
-          <div className=" mt-6 lg:mt-0 text-center">
+          <div className=" mt-6 lg:mt-24 text-center ">
             <p className="text-sm sm:text-lg lg:text-2xl font-normal">
             WE DESIGN FURNITURE
             </p>
@@ -96,7 +97,8 @@ const OurStory = () => {
               repellendus. Vel.
             </div>
           </div>
-          <img className="max-size-[748px] mt-6" src={img2} alt="image" />
+          <img className="max-size-[748px] mt-24" src={img2} alt="image" />
+        </div>
         </div>
       </div>
     </div>
