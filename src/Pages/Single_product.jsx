@@ -120,7 +120,7 @@ const Single_product = () => {
             <button className='h-[30px] w-[30px] rounded-[50%] bg-[#B88E2F] hover:border-[#B88E2F] border-[1px]'></button>
           </div>
 
-          {/* <div className='mt-[50px] flex gap-3 mb-[30px]'>
+          <div className='mt-[50px] flex flex-wrap justify-center  sm:flex sm:justify-start gap-3 mb-[30px]'>
             
               <div className='w-[123px] h-[65px] text-lg font-semibold border-[#9F9F9F] border-[1px] rounded-[10px] flex justify-evenly items-center  hover:bg-yellow-700
                 hover:text-white'>
@@ -141,7 +141,7 @@ const Single_product = () => {
               </button>
               </div>
     
-          </div> */}
+          </div>
 
           <div className=' border-[1px] border-[#D9D9D9] rounded-sm '></div>
 
