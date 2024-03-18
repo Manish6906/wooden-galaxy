@@ -11,6 +11,7 @@ import OurStory from "./Pages/OurStory";
 import Faq from "./Pages/Faq";
 import Contact from "./Pages/Contact"
 import Single_product from "./Pages/Single_product";
+import Footer2 from "./Components/Footer2";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Single_product" element={<Single_product />} />
+        <Route path="/footer2" element={<Footer2 />} />
       </Routes>
     </Router>
   );
