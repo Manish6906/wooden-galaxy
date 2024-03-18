@@ -13,6 +13,7 @@ import modern from "../assets/Rectangle74.png";
 import colorfuly from "../assets/Rectangle75.png";
 import Nav from "../assets/faq/Nav.png";
 import { Link } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const B_blog = () => {
   return (
@@ -41,6 +42,13 @@ const B_blog = () => {
               </li>
             </ul>
           </div>
+        </div>
+      </section>
+
+
+      <section>
+        <div className="h-8 flex items-center justify-end pr-5 shadow-sm shadow-slate-500">
+          <GiHamburgerMenu />
         </div>
       </section>
 
@@ -170,7 +178,7 @@ const B_blog = () => {
           </div>
 
           {/* aside div */}
-          <div className="md:flex md:flex-col hidden">
+          <div className="hidden  lg:flex flex-col">
             {/* search box */}
             <div className="relative">
               <form action="">
