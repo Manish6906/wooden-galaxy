@@ -8,11 +8,12 @@ import material_2 from "../assets/Group48095419.png";
 const B_experience = () => {
   return (
     <div>
+
       <section className="my-6">
-        <div className="md:flex md:gap-20 md:justify-center">
+        <div className="md:flex md:gap-20">
           <div className="flex flex-col items-center">
             <img
-              className="h-[350px] rounded-xl md:w-[450px]"
+              className="rounded-xl"
               src={rectangle}
               alt="image"
             />
@@ -36,8 +37,8 @@ const B_experience = () => {
         </div>
       </section>
 
-      <section className="my-6">
-        <div className="flex flex-col-reverse md:flex md:flex-row md:gap-20 md:justify-center">
+      <section className="mt-20">
+        <div className="flex flex-col-reverse md:flex md:flex-row md:gap-20 md:justify-end">
           <div className="text-center p-2 md:w-[400px] md:text-left md:mt-16">
             <h5 className=" italic my-2 text-[#E58411]">MATERIALS</h5>
             <h2 className="text-[#1E1E1E] italic text-2xl">
@@ -70,7 +71,7 @@ const B_experience = () => {
 
             <div className="flex flex-col items-center">
               <img
-                className="h-[350px] w-96 rounded-xl"
+                className="rounded-xl"
                 src={material}
                 alt="image"
               />
