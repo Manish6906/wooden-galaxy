@@ -17,6 +17,7 @@ import Bedroom from "./assets/bedroom.png";
 import Living from "./assets/living.png";
 import { dining, bedroom, living } from "./utils/data.js";
 import DBL from "./Pages/DBL.jsx";
+import Footer2 from "./Components/Footer2";
 
 const App = () => {
   return (
@@ -66,6 +67,8 @@ const App = () => {
             />
           }
         />
+                <Route path="/footer2" element={<Footer2 />} />
+
       </Routes>
     </Router>
   );
