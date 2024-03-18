@@ -16,13 +16,7 @@ const Home = () => {
         <B_experience />
         <Testimonials />
         <SubFooter />
-
         <Footer /> 
-        {/* <OurStory /> */}
-        <Shop/>
-
-        <Footer /> 
-
     </>
   );
 };
