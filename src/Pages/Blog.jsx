@@ -1,8 +1,11 @@
 import React from 'react'
+import B_blog from '../Components/B_blog'
 
 const Blog = () => {
   return (
-    <div>Blog</div>
+    <div>
+      <B_blog/>
+    </div>
   )
 }
 
