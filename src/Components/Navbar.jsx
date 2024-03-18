@@ -14,7 +14,6 @@ const Navbar = () => {
     setShowMenu(!showMenu);
   };
 
-  
   return (
     <>
       <div
@@ -90,7 +89,7 @@ const Navbar = () => {
               </ul>
             </div> */}
 
-{/* 
+            {/* 
             <div className="flex md:hidden">
               <button
                 onClick={toggleMenu}
@@ -100,21 +99,21 @@ const Navbar = () => {
             </div> */}
 
             {/* <div className="flex justify-end md:flex"> */}
-              <div className="flex gap-4 pb-5">
-                <div className="flex items-center">
-                  <IoMdLogIn size={25} color="blue" />
+            <div className="flex gap-4 pb-5">
+              <div className="flex items-center">
+                <IoMdLogIn size={25} color="blue" />
+                <Link to="/Login" style={{ opacity: 1 }}>
                   <h1>Login</h1>
-                </div>
-                <div className="flex items-center ">
-                  <img src={Wish} alt="" className="h-6 w-6" />
-                </div>
-                <div className="flex items-center ">
-                  <img src={Trolley} alt="" className="h-6 w-7" />
-                </div>
+                </Link>
               </div>
+              <div className="flex items-center ">
+                <img src={Wish} alt="" className="h-6 w-6" />
+              </div>
+              <div className="flex items-center ">
+                <img src={Trolley} alt="" className="h-6 w-7" />
+              </div>
+            </div>
             {/* </div> */}
-
-
           </div>
         </div>
 

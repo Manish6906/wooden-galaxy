@@ -89,14 +89,14 @@ const Faq = () => {
         </div>
 
         <div className="flex justify-center mt-7 ">
-          <h1 className="text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-[#AF835E]">
+          <h1 className="text-3xl lg:text-4xl font-poppins xl:text-5xl 2xl:text-6xl text-[#AF835E]">
             Frequently Asked Question
           </h1>
         </div>
 
         <div className="flex flex-col lg:flex-row justify-between gap-3 mt-14">
           <div className="lg:ml-28 mt-5 leading-10 w-full lg:w-1/2">
-            <h1 className="text-5xl font-bold mb-3 text-[#AF835E]">Delivery</h1>
+            <h1 className="text-5xl font-bold font-poppins mb-3 text-[#AF835E]">Delivery</h1>
             {accordionData1.map((item, index) => (
               <div
                 key={index}
@@ -138,7 +138,7 @@ const Faq = () => {
             />
           </div>
           <div className="lg:ml-28 mt-5 leading-10 w-full lg:w-1/2">
-            <h1 className="text-5xl font-bold mb-3 text-[#AF835E]">Payment</h1>
+            <h1 className="text-5xl font-bold font-poppins mb-3 text-[#AF835E]">Payment</h1>
             {accordionData2.map((item, index) => (
               <div
                 key={index}
@@ -165,7 +165,7 @@ const Faq = () => {
 
         <div className="flex flex-col lg:flex-row justify-between gap-3 mt-20">
           <div className="lg:ml-28 mt-5 leading-10 w-full lg:w-1/2">
-            <h1 className="text-5xl font-bold mb-3 text-[#AF835E]">
+            <h1 className="text-5xl font-poppins font-bold mb-3 text-[#AF835E]">
               Your Order
             </h1>
             {accordionData3.map((item, index) => (

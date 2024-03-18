@@ -37,11 +37,11 @@ const OurStory = () => {
       </div>
 
       <div className="w-full ">
-        <p className="text-center mt-6 sm:mt-8 lg:mt-10 lg:font-bold font-outline-2 sm:text-5xl lg:text-6xl ">
+        <p className="text-center font-poppins mt-6 sm:mt-8 lg:mt-10 lg:font-bold font-outline-2 sm:text-5xl lg:text-6xl ">
           The Future Of Wooden Galaxy
         </p>
 
-        <h3 className="mb-3 sm:mb-4 lg:mb-5 text-center text-md sm:text-lg lg:text-2xl sm:mx-auto ml-3 mr-3 mt-2">
+        <h3 className="mb-3 font-poppins sm:mb-4 lg:mb-5 text-center text-md sm:text-lg lg:text-2xl sm:mx-auto ml-3 mr-3 mt-2">
           "Where comfort meets craftsmanship: Wooden Galaxy's celestial <br />
           furniture collection."
         </h3>
@@ -49,16 +49,16 @@ const OurStory = () => {
         <div className="flex flex-col justify-end sm:flex-row items-center mt-8 sm:mt-10 sm:mx-auto ">
           <img className="max-size-[748px] mt-6 -ml-3 md:-ml-10" src={img1} alt="image" />
           <div className=" mt-6 lg:mt-0 text-center">
-            <p className="text-sm sm:text-lg lg:text-2xl font-normal">
+            <p className="text-sm font-poppins sm:text-lg lg:text-2xl font-normal">
             WE DESIGN FURNITURE
             </p>
             <br />
-            <span className="text-orange-800 text-sm sm:text-lg lg:text-2xl font-normal">
+            <span className="text-orange-800 font-poppins text-sm sm:text-lg lg:text-2xl font-normal">
               Simple Creative
             </span>
             <br />
             <br />
-            <div className="mx-auto px-3 font-normal text-[26px] leading-[39px] text-start">
+            <div className="mx-auto font-poppins px-3 font-normal text-[26px] leading-[39px] text-start">
               Step into a universe of timeless elegance with Wooden Galaxy. Our
               curated collection brings together simplicity and creativity,
               offering you furniture pieces that elevate your space with natural
@@ -74,16 +74,16 @@ const OurStory = () => {
 
         <div className="flex flex-col justify-end sm:flex-row items-center mt-8 sm:mt-10 sm:mx-auto ">
           <div className=" mt-6 lg:mt-0 text-center">
-            <p className="text-sm sm:text-lg lg:text-2xl font-normal">
+            <p className="text-sm font-poppins sm:text-lg lg:text-2xl font-normal">
             WE DESIGN FURNITURE
             </p>
             <br />
-            <span className="text-orange-800 text-sm sm:text-lg lg:text-2xl font-normal">
+            <span className="text-orange-800 font-poppins text-sm sm:text-lg lg:text-2xl font-normal">
               Simple Creative
             </span>
             <br />
             <br />
-            <div className="mx-auto px-3 font-normal text-[26px] leading-[39px] text-start">
+            <div className="mx-auto px-3 font-poppins font-normal text-[26px] leading-[39px] text-start">
               Step into a universe of timeless elegance with Wooden Galaxy. Our
               curated collection brings together simplicity and creativity,
               offering you furniture pieces that elevate your space with natural

@@ -13,7 +13,7 @@ const Contact = () => {
 
           <div className="absolute flex flex-col items-center justify-center"></div>
           <div className="absolute flex flex-col items-center justify-center">
-            <h1 className="font-bold text-3xl">Contact</h1>
+            <h1 className="font-bold font-poppins text-3xl">Contact</h1>
             <ul className="mt-5 flex gap-1">
               <li>
                 <Link to="/" style={{ opacity: 1 }}>
@@ -31,10 +31,10 @@ const Contact = () => {
         </div>
 
         <div className="mt-32">
-          <h1 className="text-4xl font-semibold text-center">
+          <h1 className="text-4xl font-poppins font-semibold text-center">
             Get In Touch With Us
           </h1>
-          <h2 className="text-center text-[#9F9F9F] my-4">
+          <h2 className="text-center font-poppins text-[#9F9F9F] my-4">
             For More Information About Our Product & Services. Please Feel Free
             To Drop Us <br /> An Email. Our Staff Always Be There To Help You
             Out. Do Not Hesitate!
@@ -48,8 +48,8 @@ const Contact = () => {
                 <IoLocationSharp />
               </div>
               <div>
-                <h1 className="text-xl font-bold ml-8 ">Adderss</h1>
-                <h2 className="ml-8">
+                <h1 className="text-xl font-poppins font-bold ml-8 ">Adderss</h1>
+                <h2 className="ml-8 font-poppins">
                   236 5th SE Avenue, New <br /> York NY10000, United <br />{" "}
                   States
                 </h2>
@@ -61,8 +61,8 @@ const Contact = () => {
                 <FaPhoneAlt />
               </div>
               <div>
-                <h1 className="text-xl font-bold ml-8 ">Phone</h1>
-                <h2 className="ml-8">
+                <h1 className="text-xl font-bold font-poppins ml-8 ">Phone</h1>
+                <h2 className="ml-8 font-poppins">
                   Mobile: +(84) 546-6789 <br />
                   Hotline: +(84) 456-6789
                 </h2>
@@ -74,8 +74,8 @@ const Contact = () => {
                 <MdAccessTimeFilled />
               </div>
               <div>
-                <h1 className="text-xl font-bold ml-8 ">Working Time</h1>
-                <h2 className="ml-8">
+                <h1 className="text-xl font-poppins font-bold ml-8 ">Working Time</h1>
+                <h2 className="ml-8 font-poppins">
                   Monday-Friday: 9:00 - <br />
                   22:00 <br />
                   Saturday-Sunday: 9:00 - <br />
@@ -84,10 +84,10 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="Csm:ml-10 Csm:mr-10">
+          <div className="Csm:ml-10 font-poppins Csm:mr-10">
             <form>
               <div className="mb-4">
-                <label className="block text-sm font-medium text-gray-700">
+                <label className="block font-poppins text-sm font-medium text-gray-700">
                   Your Name
                 </label>
                 <input
@@ -97,7 +97,7 @@ const Contact = () => {
                 />
               </div>
               <div className="mb-4">
-                <label className="block text-sm font-medium text-gray-700">
+                <label className="block text-sm font-poppins font-medium text-gray-700">
                   Email Address
                 </label>
                 <input
@@ -107,7 +107,7 @@ const Contact = () => {
                 />
               </div>
               <div className="mb-4">
-                <label className="block text-sm font-medium text-gray-700">
+                <label className="block text-sm font-poppins font-medium text-gray-700">
                   Subject
                 </label>
                 <input
@@ -117,7 +117,7 @@ const Contact = () => {
                 />
               </div>
               <div className="mb-4">
-                <label className="block text-sm font-medium text-gray-700">
+                <label className="block text-sm font-poppins font-medium text-gray-700">
                   Message
                 </label>
                 <textarea
@@ -127,7 +127,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="bg-[#B88E2F] text-white px-20 py-2 rounded-md hover:bg-[#aea591]"
+                className="bg-[#B88E2F] text-white font-poppins px-20 py-2 rounded-md hover:bg-[#aea591]"
               >
                 Submit
               </button>
