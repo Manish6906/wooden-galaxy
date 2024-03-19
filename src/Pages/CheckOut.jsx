@@ -20,7 +20,7 @@ const CheckOut = () => {
         </div>
       </div>
 
-      <div className="mt-60 lg:ml-44 lg:mr-36 ml-20 mr-20 lg:flex ">
+      <div className="lg:mt-60 lg:ml-44 lg:mr-36 ml-10 mr-10 lg:flex mt-10">
         <div className="flex-none lg:w-[608px] sm:w-full md:flex-col">
           <div>
             <label className="md:text-3xl mt-4 md:mt-32 font-bold">
@@ -138,7 +138,7 @@ const CheckOut = () => {
               <h1 className="font-medium text-xl lg:mt-4 sm:mt-2">Subtotal</h1>
               <h1 className="text-base lg:mt-4 sm:mt-2">Rs.250,000.00</h1>
               <h1 className="text-base lg:mt-4 sm:mt-2">Rs.250,000.00</h1>
-              <p className="mb-4 mt-5 font-bold w-[178px] h-[36px] text-[#B88E2F;] text-2xl -ml-10 sm:ml-1  sm:mt-2">
+              <p className="mb-4 mt-5 font-bold w-[178px] h-[36px] text-[#B88E2F;] text-2xl lg:-ml-10 sm:ml-1  sm:mt-2">
                 Rs.250,000.00
               </p>
             </div>
@@ -176,10 +176,10 @@ const CheckOut = () => {
               other purposes described in our{" "}
               <span className="font-bold">privacy policy.</span>
             </p>
-            <button className="rounded-2xl border-black border-2 w-full mt-8">
+            <button className="rounded-2xl border-black border-2 lg:ml-28 lg:top-[1118px] lg:left-[883px] lg:w-[318px] lg:h-[64px] lg:mt-8 w-full mt-8 h-16">
               Place order
             </button>
-          </div>
+          </div><br /><br />
         </div>
       </div>
     </>
