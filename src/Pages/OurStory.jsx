@@ -29,7 +29,7 @@ const OurStory = () => {
                 </Link>
               </li>
               <li className="font-poppins text-black opacity-95">
-                &gt;
+                <strong>&gt;</strong>
               </li>
               <li>
                 <Link
