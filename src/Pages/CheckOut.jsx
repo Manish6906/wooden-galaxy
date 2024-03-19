@@ -24,7 +24,7 @@ const CheckOut = () => {
             <label className=" md: text-3xl mt-4 md:mt-32 font-bold">
               Billing details
             </label>
-          </div>
+          </div> 
           <form action="#" method="post">
             <div className="flex mt-8">
               <div className="flex-none">
