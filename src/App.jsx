@@ -19,6 +19,7 @@ import { dining, bedroom, living } from "./utils/data.js";
 // import Footer2 from "./Components/Footer2.jsx";
 import DBL from "./Pages/DBL.jsx";
 import Footer2 from "./Components/Footer2";
+import CheckOut from "./Pages/CheckOut.jsx";
 
 const App = () => {
   return (
@@ -26,7 +27,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/Footer' element={<Footer />} />
-        {/* <Route path='/Footer2' element={<Footer2 />} /> */}
+        <Route path='/Checkout' element={<CheckOut />} />
         <Route path='/Navbar' element={<Navbar />} />
         <Route path='/Blog' element={<Blog />} />
         <Route path='/Shop' element={<Shop />} />
