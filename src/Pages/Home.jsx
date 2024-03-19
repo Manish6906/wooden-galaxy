@@ -6,7 +6,6 @@ import Footer from "../Components/Footer";
 import Testimonials from "../Components/Testimonials";
 import SubFooter from "../Components/SubFooter";
 
-
 const Home = () => {
   return (
     <>
