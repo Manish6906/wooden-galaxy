@@ -16,7 +16,9 @@ import Dining from "./assets/dining.png";
 import Bedroom from "./assets/bedroom.png";
 import Living from "./assets/living.png";
 import { dining, bedroom, living } from "./utils/data.js";
+// import Footer2 from "./Components/Footer2.jsx";
 import DBL from "./Pages/DBL.jsx";
+import Footer2 from "./Components/Footer2";
 
 const App = () => {
   return (
@@ -24,6 +26,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/Footer' element={<Footer />} />
+        {/* <Route path='/Footer2' element={<Footer2 />} /> */}
         <Route path='/Navbar' element={<Navbar />} />
         <Route path='/Blog' element={<Blog />} />
         <Route path='/Shop' element={<Shop />} />
@@ -66,6 +69,8 @@ const App = () => {
             />
           }
         />
+                <Route path="/footer2" element={<Footer2 />} />
+
       </Routes>
     </Router>
   );
