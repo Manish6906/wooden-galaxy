@@ -25,8 +25,8 @@ const Testimonials = () => {
     <div>
 
       <div className='py-8'>
-        <p className='text-sm text-[#E58411] text-center'>Testimonials</p>
-        <h2 className='text-center text-3xl italic mt-3'>Our Client Review</h2>
+        <p className='text-sm text-[#E58411] text-center tracking-[0.3rem] font-semibold uppercase mb-6'>Testimonials</p>
+        <h2 className='text-center text-3xl italic mt-3 font-semibold mb-3'>Our Client Review</h2>
       </div>
 
       <div className='flex flex-col items-center md:flex-row md:justify-center md:gap-5'>
