@@ -17,7 +17,7 @@ function Login() {
         {/* HIDDEN ON MOBILE VIEW  */}
         <div className="hidden md:block bg-cover bg-center w-2/3 h-screen" style={{ backgroundImage: `url(${LoginImg})` }}></div>
         {/* <div className='md:block md:h-screen '> */}
-          {/* <img src={LoginImg} alt="" /> */}
+        {/* <img src={LoginImg} alt="" /> */}
         {/* </div> */}
 
         {/* RIGHT-CONTENT */}
@@ -28,7 +28,11 @@ function Login() {
             <h1 className='md:hidden text-4xl font-bold py-4 text-[#444B59]'>WOODEN GALAXY</h1>
             <h1 className='hidden md:block text-6xl font-bold py-4 text-[#444B59]'>WELCOME</h1>
 
-            <h3 className='text-base mt-2 text-[#444B59] pb-{10px}'>Don't have a account <span className='text-base text-[#B5B0AB]'>Sign up</span> </h3>
+            <h3 className='text-base mt-2 text-[#444B59] pb-{10px}'>Don't have a account <span className='text-base text-[#B5B0AB]'>
+              <Link to="/Signup">
+                Sign up
+              </Link>
+            </span> </h3>
 
           </div>
 

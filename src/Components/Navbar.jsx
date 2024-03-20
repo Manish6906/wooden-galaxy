@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import React, { useState } from "react";
 import { IoMdLogIn } from "react-icons/io";
 import Navimg from "../assets/navbg.png";
@@ -14,7 +14,7 @@ const Navbar = () => {
     setShowMenu(!showMenu);
   };
 
-  
+
   return (
     <>
       <div
@@ -90,7 +90,7 @@ const Navbar = () => {
               </ul>
             </div> */}
 
-{/* 
+            {/* 
             <div className="flex md:hidden">
               <button
                 onClick={toggleMenu}
@@ -100,18 +100,22 @@ const Navbar = () => {
             </div> */}
 
             {/* <div className="flex justify-end md:flex"> */}
-              <div className="flex gap-4 pb-5">
-                <div className="flex items-center">
-                  <IoMdLogIn size={25} color="blue" />
-                  <h1>Login</h1>
-                </div>
-                <div className="flex items-center ">
-                  <img src={Wish} alt="" className="h-6 w-6" />
-                </div>
-                <div className="flex items-center ">
-                  <img src={Trolley} alt="" className="h-6 w-7" />
-                </div>
+            <div className="flex gap-4 pb-5">
+              <div className="flex items-center">
+                <IoMdLogIn size={25} color="blue" />
+                <h1>
+                <Link to="/Login">
+                  Login
+                </Link>
+                </h1>
               </div>
+              <div className="flex items-center ">
+                <img src={Wish} alt="" className="h-6 w-6" />
+              </div>
+              <div className="flex items-center ">
+                <img src={Trolley} alt="" className="h-6 w-7" />
+              </div>
+            </div>
             {/* </div> */}
 
 
