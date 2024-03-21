@@ -17,12 +17,10 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import SubFooter from "./SubFooter";
 
 const B_blog = () => {
-  // const [value, setvalue] = useState("")
+
+  const [open, setOpen] = useState(false);
 
 
-  const handleclick = () => {
-    
-  }
   return (
     <div>
       <section>
@@ -48,58 +46,60 @@ const B_blog = () => {
         </div>
       </section>
 
-      {/* hamburger */}
-      <section className="relative  ">
+      <section className="relative lg:hidden">
         <div className="h-8 flex items-center justify-end pr-5 shadow-sm shadow-slate-500 relative">
-          <GiHamburgerMenu />
+          <GiHamburgerMenu open={open} onClick={() => setOpen(!open)} />
         </div>
-        <div className="absolute p-2 bg-white right-0 z-10 top-9 shadow-2xl">
-          <div className="relative">
-            <form action="">
-              <input
-                type="search"
-                className="border-2 border-[#9F9F9F] p-2 pl-4 pr-8 rounded-lg outline-none"
-              />
-              <IoSearchSharp className="text-xl absolute top-3 right-8" onClick={handleclick()} />
-            </form>
+        {open && (
+          <div className="hamburger absolute p-2 bg-white right-0 z-10 top-9 shadow-2xl">
+            <div className="relative">
+              <form action="">
+                <input
+                  type="search"
+                  className="border-2 border-[#9F9F9F] p-2 pl-4 pr-8 rounded-lg outline-none"
+                />
+                <IoSearchSharp className="text-xl absolute top-3 right-8" />
+              </form>
+            </div>
+            <div className="p-2">
+              <h3 className="font-medium text-xl">Categories</h3>
+              <ul className="mt-4 flex flex-col gap-3 text-[#9F9F9F]">
+                <Link to="link">
+                  <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
+                    <li>Crafts</li>
+                    <li>2</li>
+                  </li>
+                </Link>
+                <Link to="link">
+                  <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
+                    <li>Design</li>
+                    <li>8</li>
+                  </li>
+                </Link>
+                <Link to="link">
+                  <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
+                    <li>Handmade</li>
+                    <li>7</li>
+                  </li>
+                </Link>
+                <Link to="link">
+                  <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
+                    <li>Interior</li>
+                    <li>1</li>
+                  </li>
+                </Link>
+                <Link to="link">
+                  <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
+                    <li>Wood</li>
+                    <li>6</li>
+                  </li>
+                </Link>
+              </ul>
+            </div>
           </div>
-          <div className="p-2">
-            <h3 className="font-medium text-xl">Categories</h3>
-            <ul className="mt-4 flex flex-col gap-3 text-[#9F9F9F]">
-              <Link to="link">
-                <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
-                  <li>Crafts</li>
-                  <li>2</li>
-                </li>
-              </Link>
-              <Link to="link">
-                <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
-                  <li>Design</li>
-                  <li>8</li>
-                </li>
-              </Link>
-              <Link to="link">
-                <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
-                  <li>Handmade</li>
-                  <li>7</li>
-                </li>
-              </Link>
-              <Link to="link">
-                <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
-                  <li>Interior</li>
-                  <li>1</li>
-                </li>
-              </Link>
-              <Link to="link">
-                <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
-                  <li>Wood</li>
-                  <li>6</li>
-                </li>
-              </Link>
-            </ul>
-          </div>
-        </div>
+        )}
       </section>
+
 
       <section className="mt-24">
         {/* outer div */}
