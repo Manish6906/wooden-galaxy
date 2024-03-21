@@ -2,102 +2,110 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Footer() {
-  return (<footer
-  class="bg-zinc-50 text-center text-surface/75 lg:text-left">
-  <div
-    class="flex items-center justify-center border-neutral-200 p-6 lg:justify-between">
+  return (
+    <footer className="bg-zinc-50 text-center text-surface/75 lg:text-left">
+      <div className="flex items-center justify-between flex-wrap border-neutral-200 p-6 lg:justify-between">
+        {/* Content */}
+      </div>
 
-  </div>
+      <div className="mx-6 py-10 text-center md:text-left">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 mx-4">
+          {/* Section 1 */}
+          <div className="">
+            <h6 className="mb-4 italic font-semibold text-[#1E1E1E] text-3xl pb-3 lg:text-left">
+              Wooden Galaxy
+            </h6>
+            <p className="font-semibold text-[#1E1E1E]">
+              Welcome to Wooden Galaxy, where craftsmanship meets innovation. Discover timeless furniture pieces tailored to your style, only a tap away.
+            </p>
+          </div>
 
-  <div class="mx-6 py-10 text-center md:text-left">
-    <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-      <div class="">
-        <h6
-          class="mb-4 italic flex items-center justify-center font-semibold  md:justify-start text-[#1E1E1E] text-3xl ml-24 pb-3">
-          
-          Wooden Galaxy
-        </h6>
-        <p className="text-[#1E1E1E] font-semibold ml-24">
-        Welcome to Wooden Galaxy, where craftsmanship meets innovation. Discover timeless furniture pieces tailored to your style, only a tap away.
-        </p>
-      </div>
-      <div>
-        <h6
-          class="mb-4 flex justify-center font-semibold md:justify-start text-[#F6973F] ml-24">
-          Services
-        </h6>
-        <p class="mb-4 text-[#1E1E1E] font-semibold ml-24">
-          <Link to={'/Email'}>Email Marketing</Link>
-        </p>
-        <p class="mb-4 text-[#1E1E1E] font-semibold ml-24">
-        <Link to={'/Campaigns'}>Campaigns</Link>
-        </p>
-        <p class="mb-4 text-[#1E1E1E] font-semibold ml-24">
-          <Link to={'/Branding'}>Branding</Link>
-        </p>
-        
-      </div>
-      <div>
-        <h6
-          class="mb-4 flex justify-center font-semibold md:justify-start text-[#F6973F] ml-16">
-          Furniture
-        </h6>
-        <p class="mb-4 text-[#1E1E1E] font-semibold ml-16">
-        <Link to={'/Beds'}>Beds</Link>
-        </p>
-        <p class="mb-4 text-[#1E1E1E] font-semibold ml-16">
-          <Link to={'/Chair'}>Chair</Link>
-        </p>
-        <p class="mb-4 text-[#1E1E1E] font-semibold ml-16">
-        <Link to={'/All'}>All</Link>
-        </p>
-        
-      </div>
-      <div>
-        <h6
-          class="mb-4 flex justify-center font-semibold md:justify-start text-[#F6973F]">
-          Follow Us
-        </h6>
-        <p class="mb-4 flex items-center justify-center md:justify-start font-semibold text-[#1E1E1E] ml-18">
-          <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+          {/* Section 2 */}
+          <div className='flex justify-center flex-col items-center'>
+            <h6 className="mb-4 font-semibold  text-[#F6973F] mx-4">
+              Services
+            </h6>
+            <p className="mb-4 font-semibold text-[#1E1E1E]">
+              <Link to={'/Email'}>Email Marketing</Link>
+            </p>
+            <p className="mb-4 font-semibold text-[#1E1E1E]">
+              <Link to={'/Campaigns'}>Campaigns</Link>
+            </p>
+            <p className="mb-4 font-semibold text-[#1E1E1E]">
+              <Link to={'/Branding'}>Branding</Link>
+            </p>
+          </div>
+
+          {/* Section 3 */}
+          <div className='flex justify-center flex-col items-center'>
+            <h6 className="mb-4 font-semibold text-[#F6973F]">
+              Furniture
+            </h6>
+            <p className="mb-4 font-semibold text-[#1E1E1E]">
+              <Link to={'/Beds'}>Beds</Link>
+            </p>
+            <p className="mb-4 font-semibold text-[#1E1E1E]">
+              <Link to={'/Chair'}>Chair</Link>
+            </p>
+            <p className="mb-4 font-semibold text-[#1E1E1E]">
+              <Link to={'/All'}>All</Link>
+            </p>
+          </div>
+
+          {/* Section 4 */}
+          <div className='flex flex-col  items-center justify-center
+          '>
+
+            <h6 className="mb-4 font-semibold text-[#F6973F]">
+              Follow Us
+            </h6>
+            <div className='w-fit'>
+
+            <p className="mb-4 font-semibold text-[#1E1E1E] flex justify-start items-center">
+            <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
           <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M8.7357 3.29509H10.5851V0.139742C10.2661 0.0967442 9.16872 0 7.89075 0C5.22424 0 3.39761 1.643 3.39761 4.66274V7.44186H0.455078V10.9693H3.39761V19.845H7.00529V10.9701H9.82881L10.277 7.44269H7.00445V5.01251C7.00529 3.99297 7.28553 3.29509 8.7357 3.29509Z" fill="#1E2833"/>
 </svg>
           </span>
-          <Link to={'/Facebook'}>Facebook</Link>
-        </p>
-        <p class="mb-4 flex items-center justify-center md:justify-start font-semibold text-[#1E1E1E] ml-18">
-          <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
-<svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20.2755 1.881C19.5331 2.2 18.7421 2.41144 17.9173 2.51411C18.7658 2.01789 19.4133 1.23811 19.7177 0.298222C18.9267 0.760222 18.0533 1.08656 17.1226 1.26867C16.3715 0.485222 15.3009 0 14.1331 0C11.8673 0 10.0432 1.80156 10.0432 4.01011C10.0432 4.32789 10.0706 4.63344 10.138 4.92433C6.73558 4.76178 3.72492 3.16433 1.70242 0.730889C1.34933 1.331 1.14221 2.01789 1.14221 2.75733C1.14221 4.14578 1.87211 5.37656 2.96009 6.08911C2.30256 6.07689 1.6575 5.88989 1.11102 5.59533C1.11102 5.60756 1.11102 5.62344 1.11102 5.63933C1.11102 7.58756 2.52964 9.20578 4.38994 9.57856C4.0568 9.66778 3.69373 9.71056 3.31693 9.71056C3.05491 9.71056 2.7904 9.69589 2.54211 9.64211C3.07238 11.2298 4.57709 12.397 6.36627 12.4349C4.97385 13.5019 3.20588 14.1448 1.29193 14.1448C0.956306 14.1448 0.634403 14.1301 0.3125 14.0898C2.12539 15.235 4.2739 15.8889 6.59085 15.8889C14.1219 15.8889 18.2392 9.77778 18.2392 4.48067C18.2392 4.30344 18.233 4.13233 18.2243 3.96244C19.0365 3.39778 19.719 2.69256 20.2755 1.881Z" fill="#1E2833"/>
+
+              <Link to={'/Facebook'}>Facebook</Link>
+            </p>
+              <p className="mb-4 font-semibold text-[#1E1E1E] flex 
+w-full
+justify-start items-center">
+              <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
+            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.2755 2.63756C19.5331 2.97175 18.7421 3.19327 17.9173 3.30082C18.7658 2.78097 19.4133 1.96406 19.7177 0.979415C18.9267 1.46342 18.0533 1.80529 17.1226 1.99607C16.3715 1.17532 15.3009 0.666992 14.1331 0.666992C11.8673 0.666992 10.0432 2.55434 10.0432 4.86806C10.0432 5.20097 10.0706 5.52108 10.138 5.82582C6.73558 5.65552 3.72492 3.98201 1.70242 1.43269C1.34933 2.06137 1.14221 2.78097 1.14221 3.55563C1.14221 5.01019 1.87211 6.29957 2.96009 7.04606C2.30256 7.03326 1.6575 6.83735 1.11102 6.52877C1.11102 6.54157 1.11102 6.55822 1.11102 6.57486C1.11102 8.61586 2.52964 10.3111 4.38994 10.7017C4.0568 10.7951 3.69373 10.84 3.31693 10.84C3.05491 10.84 2.7904 10.8246 2.54211 10.7683C3.07238 12.4315 4.57709 13.6543 6.36627 13.694C4.97385 14.8118 3.20588 15.4853 1.29193 15.4853C0.956306 15.4853 0.634403 15.47 0.3125 15.4277C2.12539 16.6275 4.2739 17.3125 6.59085 17.3125C14.1219 17.3125 18.2392 10.9104 18.2392 5.36102C18.2392 5.17536 18.233 4.9961 18.2243 4.81812C19.0365 4.22657 19.719 3.48776 20.2755 2.63756Z" fill="#1E2833"/>
 </svg>
+</span>
 
-          </span>
-          <Link to={'/Twitter'}>Twitter</Link>
-        </p>
-        <p class="mb-4 flex items-center justify-center md:justify-start font-semibold text-[#1E1E1E] ml-18">
-          <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
-          <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="#1E2833"
-          viewBox="0 0 448 512">
-          <path
-            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-        </svg>
-          </span>
-          <Link to={'/Instagram'}>Instagram</Link>
-        </p>
-        
+              <Link to={'/Twitter'}>Twitter</Link>
+            </p>
+            <p className="mb-4 font-semibold text-[#1E1E1E ] flex  items-start justify-start">
+            <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
+            <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.71322 0.428711H14.3695C17.8926 0.428711 20.7497 3.36073 20.7497 6.97633V14.8335C20.7497 18.4491 17.8926 21.3811 14.3695 21.3811H6.71322C3.19006 21.3811 0.333008 18.4491 0.333008 14.8335V6.97633C0.333008 3.36073 3.19006 0.428711 6.71322 0.428711ZM14.3695 19.4168C16.8322 19.4168 18.8356 17.3609 18.8356 14.8335V6.97633C18.8356 4.44895 16.8322 2.393 14.3695 2.393H6.71322C4.25046 2.393 2.24707 4.44895 2.24707 6.97633V14.8335C2.24707 17.3609 4.25046 19.4168 6.71322 19.4168H14.3695Z" fill="#1E2833"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.4375 10.9051C5.4375 8.01235 7.72289 5.66699 10.5417 5.66699C13.3604 5.66699 15.6458 8.01235 15.6458 10.9051C15.6458 13.7978 13.3604 16.1432 10.5417 16.1432C7.72289 16.1432 5.4375 13.7978 5.4375 10.9051ZM7.35156 10.9051C7.35156 12.7096 8.78328 14.1789 10.5417 14.1789C12.3001 14.1789 13.7318 12.7096 13.7318 10.9051C13.7318 9.09925 12.3001 7.63128 10.5417 7.63128C8.78328 7.63128 7.35156 9.09925 7.35156 10.9051Z" fill="#1E2833"/>
+<ellipse cx="16.0288" cy="5.27415" rx="0.68013" ry="0.697976" fill="#1E2833"/>
+</svg>
+</span>
+              <Link to={'/Instagram'}>Instagram</Link>
+            </p>
+                 </div>
+
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <div class="p-6 text-end flex justify-end">
-    <span className='mx-16 text-[#1E1E1E] font-semibold'><Link to={'/Terms & Conditions'}>Terms & Conditions</Link></span>
-    <p class="font-semibold mr-36 text-[#1E1E1E]" href="https://tw-elements.com/"
-      ><Link to={'/Privacy Policy'}>Privacy Policy</Link></p>
-  </div>
-</footer>
+      <div className="lg:p-6 p-2 lg:text-end flex lg:justify-end justify-between lg:mr-24">
+        <span className='md:mx-16 mx-4 font-semibold text-[#1E1E1E]'>
+          <Link to={'/Terms & Conditions'}>Terms & Conditions</Link>
+        </span>
+        <p className="font-semibold text-[#1E1E1E] mr-10">
+          <Link to={'/Privacy Policy'}>Privacy Policy</Link>
+        </p>
+      </div>
+    </footer>
   );
 }
 

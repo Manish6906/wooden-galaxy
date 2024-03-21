@@ -2,8 +2,11 @@ import React from "react";
 import B_experience from "../Components/B_experience";
 import Navbar from "../Components/Navbar";
 import AbhiCards from "../Components/AbhiCards";
-import CheckOut from "./CheckOut";
 import Footer from "../Components/Footer";
+import Testimonials from "../Components/Testimonials";
+import SubFooter from "../Components/SubFooter";
+import Shop from "./Shop";
+import OurStory from "./OurStory";
 
 const Home = () => {
   return (
@@ -11,8 +14,9 @@ const Home = () => {
         <Navbar />
         <AbhiCards />
         <B_experience />
-        <Footer />
-        <CheckOut />
+        <Testimonials />
+        <SubFooter />
+        <Footer /> 
     </>
   );
 };

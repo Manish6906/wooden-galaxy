@@ -15,7 +15,7 @@ import img3 from "../assets/image3.png";
 export default function AbhiCards() {
   return (
     <>
-      <div className="flex  w-full flex-wrap px-[5%]  border-4">
+      <div className="flex border-4 relative w-full flex-wrap px-[5%] ">
         <div className="basis-full shrink-0 text-center">
           <h1 className="font-bold text-3xl">Browse The Range</h1>
           <p className=" text-xl">

@@ -67,11 +67,9 @@ const Faq = () => {
     <>
       <div>
         <div className="w-full h-50 flex justify-center items-center">
-
           <img src={Nav} alt="" />
-          
-          <div className="absolute flex flex-col items-center justify-center">
-</div>
+
+          <div className="absolute flex flex-col items-center justify-center"></div>
           <div className="absolute flex flex-col items-center justify-center">
             <h1 className="font-bold text-3xl">Faq</h1>
             <ul className="mt-5 flex gap-1">

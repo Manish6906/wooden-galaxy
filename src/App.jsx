@@ -6,26 +6,71 @@ import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import Login from "./Pages/Login";
 import Blog from "./Pages/Blog";
+import Signup from "./Pages/Signup";
 import Shop from "./Pages/Shop";
 import OurStory from "./Pages/OurStory";
 import Faq from "./Pages/Faq";
-import Contact from "./Pages/Contact"
-import CheckOut from "./Pages/CheckOut";
+import Contact from "./Pages/Contact";
+import Single_product from "./Pages/Single_product";
+import Dining from "./assets/dining.png";
+import Bedroom from "./assets/bedroom.png";
+import Living from "./assets/living.png";
+import { dining, bedroom, living } from "./utils/data.js";
+// import Footer2 from "./Components/Footer2.jsx";
+import DBL from "./Pages/DBL.jsx";
+import Footer2 from "./Components/Footer2";
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Footer" element={<Footer />} />
-        <Route path="/Navbar" element={<Navbar />} />
-        <Route path="/Blog" element={<Blog />} />
-        <Route path="/Shop" element={<Shop />} />
-        <Route path="/OurStory" element={<OurStory />} />
-        <Route path="/Faq" element={<Faq />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/checkout" element={<CheckOut />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/Footer' element={<Footer />} />
+        {/* <Route path='/Footer2' element={<Footer2 />} /> */}
+        <Route path='/Navbar' element={<Navbar />} />
+        <Route path='/Blog' element={<Blog />} />
+        <Route path='/Shop' element={<Shop />} />
+        <Route path='/OurStory' element={<OurStory />} />
+        <Route path='/Faq' element={<Faq />} />
+        <Route path='/Contact' element={<Contact />} />
+        <Route path='/Login' element={<Login />} />
+        <Route path='/Signup' element={<Signup />} />
+        <Route path='/Single_product' element={<Single_product />} />
+        <Route
+          path='/dining'
+          element={
+            <DBL
+              title={"Dining"}
+              data={dining}
+              img={Dining}
+              desc={"Elevate your dining experience with our furniture."}
+            />
+          }
+        />
+        <Route
+          path='/bedroom'
+          element={
+            <DBL
+              title={"Bedroom"}
+              data={bedroom}
+              img={Bedroom}
+              desc={"Elevate Your Bedroom with Timeless Elegance."}
+            />
+          }
+        />
+        <Route
+          path='/living'
+          element={
+            <DBL
+              title={"Living"}
+              data={living}
+              img={Living}
+              desc={"Elevate Your Living Room with Style"}
+            />
+          }
+        />
+                <Route path="/footer2" element={<Footer2 />} />
+
       </Routes>
     </Router>
   );
