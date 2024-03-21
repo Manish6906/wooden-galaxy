@@ -7,13 +7,8 @@ import React from 'react'
 const SubFooter = () => {
   return (
     <div>
-<<<<<<< HEAD
-      <div className="mt-16">
-        <div className='w-full h-[400px] md:h-[200px] bg-[#FAF3EA] md:my-1 '>
-=======
       <div>
         <div className='w-full h-[470px] md:h-[250px] bg-[#FAF3EA] md:my-1 '>
->>>>>>> 665f4bef339979094567fb637b84301a971e9d8b
 
           <div className='flex flex-col items-center justify-center md:flex-row md:justify-evenly md:pt-9'>
 

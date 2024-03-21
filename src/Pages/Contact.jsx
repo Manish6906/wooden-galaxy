@@ -4,14 +4,8 @@ import Nav from "../assets/faq/Nav.png";
 import { IoLocationSharp } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdAccessTimeFilled } from "react-icons/md";
-<<<<<<< HEAD
 import Footer2 from '../Components/Footer2'
 import SubFooter from '../Components/SubFooter'
-=======
-import SubFooter from "../Components/SubFooter";
-import Footer from "../Components/Footer";
-
->>>>>>> 665f4bef339979094567fb637b84301a971e9d8b
 const Contact = () => {
   return (
     <>
@@ -151,14 +145,9 @@ const Contact = () => {
           </div>
         </div>
       </div>
-<<<<<<< HEAD
 
       <SubFooter /> 
       <Footer2/>
-=======
-      <SubFooter />
-      <Footer />
->>>>>>> 665f4bef339979094567fb637b84301a971e9d8b
     </>
   );
 };

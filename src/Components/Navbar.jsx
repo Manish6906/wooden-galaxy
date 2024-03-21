@@ -51,7 +51,7 @@ const Navbar = () => {
                       Shop
                     </Link>
                     {showMenu && (
-                      <ul className="absolute left-0 mt-2 bg-black shadow-lg py-2 px-4 rounded-md">
+                      <ul className="absolute text-black left-0 mt-2 bg-black shadow-lg py-2 px-4 rounded-md">
                         <li>
                           <Link to="/bedroom"> Bedroom</Link>
                         </li>
