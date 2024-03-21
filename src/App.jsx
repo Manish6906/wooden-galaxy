@@ -8,6 +8,7 @@ import Login from "./Pages/Login";
 import Blog from "./Pages/Blog";
 import Signup from "./Pages/Signup";
 import Shop from "./Pages/Shop";
+import Cart from "./Pages/Cart";
 import OurStory from "./Pages/OurStory";
 import Faq from "./Pages/Faq";
 import Contact from "./Pages/Contact";
@@ -16,28 +17,29 @@ import Dining from "./assets/dining.png";
 import Bedroom from "./assets/bedroom.png";
 import Living from "./assets/living.png";
 import { dining, bedroom, living } from "./utils/data.js";
-// import Footer2 from "./Components/Footer2.jsx";
 import DBL from "./Pages/DBL.jsx";
 import Footer2 from "./Components/Footer2";
+import CheckOut from "./Pages/CheckOut.jsx";
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/Footer' element={<Footer />} />
-        {/* <Route path='/Footer2' element={<Footer2 />} /> */}
-        <Route path='/Navbar' element={<Navbar />} />
-        <Route path='/Blog' element={<Blog />} />
-        <Route path='/Shop' element={<Shop />} />
-        <Route path='/OurStory' element={<OurStory />} />
-        <Route path='/Faq' element={<Faq />} />
-        <Route path='/Contact' element={<Contact />} />
-        <Route path='/Login' element={<Login />} />
-        <Route path='/Signup' element={<Signup />} />
-        <Route path='/Single_product' element={<Single_product />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/Footer" element={<Footer />} />
+        <Route path="/Checkout" element={<CheckOut />} />
+        <Route path="/Navbar" element={<Navbar />} />
+        <Route path="/Blog" element={<Blog />} />
+        <Route path="/Shop" element={<Shop />} />
+        <Route path="/OurStory" element={<OurStory />} />
+        <Route path="/Faq" element={<Faq />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Signup" element={<Signup />} />
+        <Route path="/Cart" element={<Cart />} />
+        <Route path="/Single_product" element={<Single_product />} />
         <Route
-          path='/dining'
+          path="/dining"
           element={
             <DBL
               title={"Dining"}
@@ -48,7 +50,7 @@ const App = () => {
           }
         />
         <Route
-          path='/bedroom'
+          path="/bedroom"
           element={
             <DBL
               title={"Bedroom"}
@@ -59,7 +61,7 @@ const App = () => {
           }
         />
         <Route
-          path='/living'
+          path="/living"
           element={
             <DBL
               title={"Living"}
@@ -69,8 +71,7 @@ const App = () => {
             />
           }
         />
-                <Route path="/footer2" element={<Footer2 />} />
-
+        <Route path="/footer2" element={<Footer2 />} />
       </Routes>
     </Router>
   );
