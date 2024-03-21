@@ -13,14 +13,14 @@ const B_experience = () => {
         <div className="md:flex md:gap-20">
           <div className="flex flex-col items-center">
             <img
-              className="rounded-xl"
+              className="rounded-xl h-[445px] w-[629px]"
               src={rectangle}
               alt="image"
             />
           </div>
-          <div className=" text-center p-2 md:w-[400px] md:text-left md:mt-16">
-            <h5 className="italic my-2 text-[#E58411]">EXPERIENCES</h5>
-            <h2 className="text-[#1E1E1E] italic text-2xl">
+          <div className=" text-center  p-2 md:w-[400px] md:text-left md:mt-16">
+            <h5 className="italic  my-2 text-[#E58411]">EXPERIENCES</h5>
+            <h2 className="text-[#1E1E1E] italic  text-2xl">
               We Provide You The <br /> Best Experience
             </h2>
             <p className="text-[#1E1E1E] text-sm opacity-70">
@@ -58,18 +58,18 @@ const B_experience = () => {
           <div className=" flex flex-col items-center md:flex md:flex-row md:justify-center">
             <div>
               <img
-                className="h-44 mt-6 w-40 hidden md:block"
+                className="h-[229px]  w-[223px] hidden md:block"
                 src={material_1}
                 alt="chair"
               />
               <img
-                className="h-48 w-40 hidden md:block"
+                className="h-[317px] w-[223px]  hidden md:block"
                 src={material_2}
                 alt="sofa"
               />
             </div>
 
-            <div className="flex flex-col items-center">
+            <div className="flex h-[629px] w-[445px] flex-col items-center">
               <img
                 className="rounded-xl"
                 src={material}

@@ -36,7 +36,7 @@ const B_blog = () => {
               </li>
               <li style={{ opacity: 0.5 }}>&gt;</li>
               <li>
-                <Link to="/Faq" style={{ opacity: 0.5 }}>
+                <Link to="/Blog" style={{ opacity: 0.5 }}>
                   Blog
                 </Link>
               </li>

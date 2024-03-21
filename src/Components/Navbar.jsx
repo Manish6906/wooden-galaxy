@@ -23,13 +23,7 @@ const Navbar = () => {
           backgroundSize: "cover",
         }}
       >
-        {/* <div className="absolute">
-          <img
-            src={Navimg}
-            alt=""
-            className=" min-h-screen w-full object-cover "
-          />
-        </div> */}
+       
 
         <div
           className="h-24 p-4 flex text-white w-full 
@@ -52,7 +46,30 @@ const Navbar = () => {
               <div className={`md:flex ${showMenu ? "block" : "hidden"}`}>
                 <ul className="flex md:flex-row flex-col gap-7 pt-3 ">
                   <Link to="/">Home</Link>
-                  <Link to="/Shop">Shop</Link>
+                  <li className="relative group">
+                    <Link to="/Shop" onMouseEnter={() => setShowMenu(true)}>
+                      Shop
+                    </Link>
+                    {showMenu && (
+                      <ul className="absolute left-0 mt-2 bg-black shadow-lg py-2 px-4 rounded-md">
+                        <li>
+                          <Link to="/bedroom"> Bedroom</Link>
+                        </li>
+                        <li>
+                          <Link to="/living"> Living</Link>
+                        </li>
+                        <li>
+                          <Link to="/dining"> Dining</Link>
+                        </li>
+                        
+
+
+
+                      </ul>
+                    )}
+                  </li>
+
+                  {/* <Link to="/Shop">Shop</Link> */}
                   <Link to="/OurStory">Our Story</Link>
                   <Link to="/Faq">Faq</Link>
                   <Link to="/Blog">Blog</Link>
@@ -60,45 +77,7 @@ const Navbar = () => {
                 </ul>
               </div>
             </div>
-            {/* <div>
-              <div className="flex gap-4 mt-2">
-                <div className="flex items-center">
-                  <IoMdLogIn size={25} color="blue" /> 
-                  <Link to="/Login" style={{ opacity: 1 }}>
-                    <h1>Login</h1>
-                  </Link>
-                </div>
-
-                <div className="flex items-center ">
-                  <img src={Wish} alt="" className="h-6 w-6" />
-                </div>
-                <div className="flex items-center ">
-                  <img src={Trolley} alt="" className="h-6 w-7" />
-                </div>
-              </div>
-            </div> */}
-
-            {/* <div className={`md:flex ${showMenu ? 'block' : 'hidden'}`}>
-              <ul className="flex gap-6 pt-2">
-                <Link to="/">Home</Link>
-                <Link to="/Shop">Shop</Link>
-                <Link to="/OurStory">Our Story</Link>
-                <Link to="/Faq">Faq</Link>
-                <Link to="/Blog">Blog</Link>
-                <Link to="/Contact">Contact</Link>
-              </ul>
-            </div> */}
-
-            {/* 
-            <div className="flex md:hidden">
-              <button
-                onClick={toggleMenu}
-                className="text-white focus:outline-none">
-                <AiOutlineMenuUnfold size={45} />
-              </button>
-            </div> */}
-
-            {/* <div className="flex justify-end md:flex"> */}
+          
             <div className="flex gap-4 pb-5">
               <div className="flex items-center">
                 <IoMdLogIn size={25} color="blue" />
