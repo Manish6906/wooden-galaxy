@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaUser } from "react-icons/fa";
 import { MdDateRange } from "react-icons/md";
 import { FaTag } from "react-icons/fa6";
@@ -14,21 +14,22 @@ import colorfuly from "../assets/Rectangle75.png";
 import Nav from "../assets/faq/Nav.png";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
+import SubFooter from "./SubFooter";
 
 const B_blog = () => {
+
+  const [open, setOpen] = useState(false);
+
+
   return (
     <div>
-
-
-
       <section>
-        <div className="w-full h-50 flex justify-center items-center">
+        <div className="w-full h-50 flex justify-center">
           <img src={Nav} alt="" />
 
-          <div className="absolute flex flex-col items-center justify-center"></div>
-          <div className="absolute flex flex-col items-center justify-center">
-            <h1 className="font-bold text-3xl">Blog</h1>
-            <ul className="mt-5 flex gap-1">
+          <div className="absolute flex flex-col justify-center mt-2 sm:mt-14">
+            <h1 className="font-medium text-3xl sm:text-5xl">Blog</h1>
+            <ul className="mt-1 sm:mt-5 flex gap-1">
               <li>
                 <Link to="/" style={{ opacity: 1 }}>
                   Home
@@ -45,22 +46,68 @@ const B_blog = () => {
         </div>
       </section>
 
-
-      <section>
-        <div className="h-8 flex items-center justify-end pr-5 shadow-sm shadow-slate-500">
-          <GiHamburgerMenu />
+      <section className="relative lg:hidden">
+        <div className="h-8 flex items-center justify-end pr-5 shadow-sm shadow-slate-500 relative">
+          <GiHamburgerMenu open={open} onClick={() => setOpen(!open)} />
         </div>
+        {open && (
+          <div className="hamburger absolute p-2 bg-white right-0 z-10 top-9 shadow-2xl">
+            <div className="relative">
+              <form action="">
+                <input
+                  type="search"
+                  className="border-2 border-[#9F9F9F] p-2 pl-4 pr-8 rounded-lg outline-none"
+                />
+                <IoSearchSharp className="text-xl absolute top-3 right-8" />
+              </form>
+            </div>
+            <div className="p-2">
+              <h3 className="font-medium text-xl">Categories</h3>
+              <ul className="mt-4 flex flex-col gap-3 text-[#9F9F9F]">
+                <Link to="link">
+                  <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
+                    <li>Crafts</li>
+                    <li>2</li>
+                  </li>
+                </Link>
+                <Link to="link">
+                  <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
+                    <li>Design</li>
+                    <li>8</li>
+                  </li>
+                </Link>
+                <Link to="link">
+                  <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
+                    <li>Handmade</li>
+                    <li>7</li>
+                  </li>
+                </Link>
+                <Link to="link">
+                  <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
+                    <li>Interior</li>
+                    <li>1</li>
+                  </li>
+                </Link>
+                <Link to="link">
+                  <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
+                    <li>Wood</li>
+                    <li>6</li>
+                  </li>
+                </Link>
+              </ul>
+            </div>
+          </div>
+        )}
       </section>
 
 
-
-      <section className="my-10">
-        {/* outer div */}
+      <section className="mt-24">
+        {/ outer div /}
         <div className="md:flex md:flex-row md:justify-center md:gap-12 sm:gap-2">
-          {/* main div */}
+          {/ main div /}
           <div className="flex flex-col items-center">
-            {/* first div */}
-            <div className="p-2">
+            {/ first div /}
+            <div className="">
               <div className="md:w-[700px] rounded-lg p-2 md:p-0 sm:p-3">
                 <img src={millennial} alt="millennial" />
               </div>
@@ -98,7 +145,7 @@ const B_blog = () => {
               </div>
             </div>
 
-            {/* second div */}
+            {/ second div /}
             <div className="mt-10">
               <div className="md:w-[700px] rounded-lg p-2 md:p-0 sm:p-3">
                 <img src={decorating} alt="decorating" />
@@ -137,7 +184,7 @@ const B_blog = () => {
               </div>
             </div>
 
-            {/* third div */}
+            {/ third div /}
             <div className="mt-10">
               <div className="md:w-[700px] p-2 md:p-0 sm:p-3">
                 <img src={handmade} alt="handmade" />
@@ -177,9 +224,9 @@ const B_blog = () => {
             </div>
           </div>
 
-          {/* aside div */}
+          {/ aside div /}
           <div className="hidden  lg:flex flex-col">
-            {/* search box */}
+            {/ search box /}
             <div className="relative">
               <form action="">
                 <input
@@ -190,34 +237,44 @@ const B_blog = () => {
               </form>
             </div>
 
-            {/* Categories */}
+            {/ Categories /}
             <div className="p-7">
               <h3 className="font-medium text-xl">Categories</h3>
               <ul className="mt-4 flex flex-col gap-7 text-[#9F9F9F]">
-                <li className="flex justify-between">
-                  <li>Crafts</li>
-                  <li>2</li>
-                </li>
-                <li className="flex justify-between">
-                  <li>Design</li>
-                  <li>8</li>
-                </li>
-                <li className="flex justify-between">
-                  <li>Handmade</li>
-                  <li>7</li>
-                </li>
-                <li className="flex justify-between">
-                  <li>Interior</li>
-                  <li>1</li>
-                </li>
-                <li className="flex justify-between">
-                  <li>Wood</li>
-                  <li>6</li>
-                </li>
+                <Link to="link">
+                  <li className="flex justify-between">
+                    <li>Crafts</li>
+                    <li>2</li>
+                  </li>
+                </Link>
+                <Link to="link">
+                  <li className="flex justify-between">
+                    <li>Design</li>
+                    <li>8</li>
+                  </li>
+                </Link>
+                <Link to="link">
+                  <li className="flex justify-between">
+                    <li>Handmade</li>
+                    <li>7</li>
+                  </li>
+                </Link>
+                <Link to="link">
+                  <li className="flex justify-between">
+                    <li>Interior</li>
+                    <li>1</li>
+                  </li>
+                </Link>
+                <Link to="link">
+                  <li className="flex justify-between">
+                    <li>Wood</li>
+                    <li>6</li>
+                  </li>
+                </Link>
               </ul>
             </div>
 
-            {/* recent posts */}
+            {/ recent posts /}
             <div className="p-7 mt-5">
               <h3 className="font-medium text-xl">Recent Posts</h3>
 
@@ -227,9 +284,11 @@ const B_blog = () => {
                     <img src={millen} alt="millen" />
                   </div>
                   <div>
-                    <h4 className="font-medium text-sm">
-                      Going all-in with <br /> millen
-                    </h4>
+                    <Link to="link">
+                      <h4 className="font-medium text-sm hover:underline">
+                        Going all-in with <br /> millen
+                      </h4>
+                    </Link>
                     <p className="text-xs mt-1 text-[#9F9F9F]">03 Aug 2022</p>
                   </div>
                 </div>
@@ -239,10 +298,12 @@ const B_blog = () => {
                     <img src={newly} alt="new" />
                   </div>
                   <div>
-                    <h4 className="font-medium text-sm">
-                      Exploring new ways <br />
-                      of decorating
-                    </h4>
+                    <Link to="link">
+                      <h4 className="font-medium text-sm hover:underline">
+                        Exploring new ways <br />
+                        of decorating
+                      </h4>
+                    </Link>
                     <p className="text-xs mt-1 text-[#9F9F9F]">03 Aug 2022</p>
                   </div>
                 </div>
@@ -252,10 +313,12 @@ const B_blog = () => {
                     <img src={pieces} alt="pieces" />
                   </div>
                   <div>
-                    <h4 className="font-medium text-sm">
-                      Handmade pieces <br />
-                      that took time to make
-                    </h4>
+                    <Link to="link">
+                      <h4 className="font-medium text-sm hover:underline">
+                        Handmade pieces <br />
+                        that took time to make
+                      </h4>
+                    </Link>
                     <p className="text-xs mt-1 text-[#9F9F9F]">03 Aug 2022</p>
                   </div>
                 </div>
@@ -265,10 +328,12 @@ const B_blog = () => {
                     <img src={modern} alt="modern" />
                   </div>
                   <div>
-                    <h4 className="font-medium text-sm">
-                      Modern home in <br />
-                      Milan
-                    </h4>
+                    <Link to="link">
+                      <h4 className="font-medium text-sm hover:underline">
+                        Modern home in <br />
+                        Milan
+                      </h4>
+                    </Link>
                     <p className="text-xs mt-1 text-[#9F9F9F]">03 Aug 2022</p>
                   </div>
                 </div>
@@ -278,10 +343,12 @@ const B_blog = () => {
                     <img src={colorfuly} alt="colorful" />
                   </div>
                   <div>
-                    <h4 className="font-medium text-sm">
-                      Colorful office <br />
-                      redesign
-                    </h4>
+                    <Link to="link">
+                      <h4 className="font-medium text-sm hover:underline">
+                        Colorful office <br />
+                        redesign
+                      </h4>
+                    </Link>
                     <p className="text-xs mt-1 text-[#9F9F9F]">03 Aug 2022</p>
                   </div>
                 </div>
@@ -291,18 +358,24 @@ const B_blog = () => {
         </div>
       </section>
 
+      <section className="md:flex md:flex-row md:justify-center gap-5 flex flex-col items-center">
+        <div className="flex gap-5">
+          <button className="bg-[#B88E2F] text-white p-2 pl-3 pr-3 rounded-lg">
+            1
+          </button>
+          <button className="bg-[#F9F1E7] p-2 pl-3 pr-3 rounded-lg">2</button>
+          <button className="bg-[#F9F1E7] p-2 pl-3 pr-3 rounded-lg">3</button>
+        </div>
+        <div>
+          <button className="bg-[#F9F1E7] p-2 pl-3 pr-3 rounded-lg">
+            Next
+          </button>
+        </div>
+      </section>
 
-        <section className="md:flex md:flex-row md:justify-center gap-5 flex flex-col items-center">
-            <div className="flex gap-5">
-                <button className="bg-[#B88E2F] text-white p-2 pl-3 pr-3 rounded-lg">1</button>
-                <button className="bg-[#F9F1E7] p-2 pl-3 pr-3 rounded-lg">2</button>
-                <button className="bg-[#F9F1E7] p-2 pl-3 pr-3 rounded-lg">3</button>
-            </div>
-            <div>
-                <button className="bg-[#F9F1E7] p-2 pl-3 pr-3 rounded-lg">Next</button>
-            </div>
-        </section>
-
+      <div className="mt-20">
+        <SubFooter />
+      </div>
     </div>
   );
 };

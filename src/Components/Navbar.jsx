@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import React, { useState } from "react";
 import { IoMdLogIn } from "react-icons/io";
 import Navimg from "../assets/navbg.png";
