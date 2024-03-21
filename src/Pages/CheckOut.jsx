@@ -1,5 +1,6 @@
 import React from "react";
-import img from "../assets/OurStory.png";
+import { Link } from "react-router-dom";
+import checkout from "../assets/CheckoutNavbarImage.png";
 
 const CheckOut = () => {
   return (
