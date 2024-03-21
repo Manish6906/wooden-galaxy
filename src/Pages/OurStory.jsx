@@ -4,9 +4,12 @@ import img1 from "../assets/OurStory2.png";
 import img2 from "../assets/OurStory3.png";
 import backimg from "../assets/Back.png";
 import { Link } from "react-router-dom";
+import SubFooter from "../Components/SubFooter";
+import Footer2 from "../Components/Footer2"
 
 const OurStory = () => {
   return (
+    <>
     <div className="w-full overflow-hidden">
       <div className="relative">
         <img
@@ -122,6 +125,9 @@ const OurStory = () => {
         </div>
       </div>
     </div>
+    <SubFooter />
+    <Footer2 />
+    </>
   );
 };
 
