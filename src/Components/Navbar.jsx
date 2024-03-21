@@ -104,16 +104,18 @@ const Navbar = () => {
               <div className="flex items-center">
                 <IoMdLogIn size={25} color="blue" />
                 <h1>
-                <Link to="/Login">
-                  Login
-                </Link>
+                  <Link to="/Login">
+                    Login
+                  </Link>
                 </h1>
               </div>
               <div className="flex items-center ">
                 <img src={Wish} alt="" className="h-6 w-6" />
               </div>
               <div className="flex items-center ">
-                <img src={Trolley} alt="" className="h-6 w-7" />
+                <Link to="/Cart">
+                  <img src={Trolley} alt="" className="h-6 w-7" />
+                </Link>
               </div>
             </div>
             {/* </div> */}

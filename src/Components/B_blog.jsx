@@ -15,13 +15,14 @@ import Nav from "../assets/faq/Nav.png";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import SubFooter from "./SubFooter";
+import Footer2 from "./Footer2";
 
 const B_blog = () => {
   // const [value, setvalue] = useState("")
 
 
   const handleclick = () => {
-    
+
   }
   return (
     <div>
@@ -53,50 +54,97 @@ const B_blog = () => {
         <div className="h-8 flex items-center justify-end pr-5 shadow-sm shadow-slate-500 relative">
           <GiHamburgerMenu />
         </div>
-        <div className="absolute p-2 bg-white right-0 z-10 top-9 shadow-2xl">
-          <div className="relative">
-            <form action="">
-              <input
-                type="search"
-                className="border-2 border-[#9F9F9F] p-2 pl-4 pr-8 rounded-lg outline-none"
-              />
-              <IoSearchSharp className="text-xl absolute top-3 right-8" onClick={handleclick()} />
-            </form>
-          </div>
-          <div className="p-2">
-            <h3 className="font-medium text-xl">Categories</h3>
-            <ul className="mt-4 flex flex-col gap-3 text-[#9F9F9F]">
-              <Link to="link">
-                <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
-                  <li>Crafts</li>
-                  <li>2</li>
-                </li>
-              </Link>
-              <Link to="link">
-                <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
-                  <li>Design</li>
-                  <li>8</li>
-                </li>
-              </Link>
-              <Link to="link">
-                <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
-                  <li>Handmade</li>
-                  <li>7</li>
-                </li>
-              </Link>
-              <Link to="link">
-                <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
-                  <li>Interior</li>
-                  <li>1</li>
-                </li>
-              </Link>
-              <Link to="link">
-                <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
-                  <li>Wood</li>
-                  <li>6</li>
-                </li>
-              </Link>
-            </ul>
+        <div>
+          <div className="absolute p-2 bg-white right-0 z-10 top-9 shadow-2xl">
+            <div className="relative">
+              <form action="">
+                <input
+                  type="search"
+                  className="border-2 border-[#9F9F9F] p-2 pl-4 pr-8 rounded-lg outline-none"
+                />
+                <IoSearchSharp className="text-xl absolute top-3 right-8" onClick={handleclick()} />
+              </form>
+            </div>
+            <div className="p-2">
+              <h3 className="font-medium text-xl">Categories</h3>
+              <ul className="mt-4 flex flex-col gap-3 text-[#9F9F9F]">
+                <Link to="link">
+                  <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
+                    <li>Crafts</li>
+                    <li>2</li>
+                  </li>
+                </Link>
+                <Link to="link">
+                  <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
+                    <li>Design</li>
+                    <li>8</li>
+                  </li>
+                </Link>
+                <Link to="link">
+                  <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
+                    <li>Handmade</li>
+                    <li>7</li>
+                  </li>
+                </Link>
+                <Link to="link">
+                  <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
+                    <li>Interior</li>
+                    <li>1</li>
+                  </li>
+                </Link>
+                <Link to="link">
+                  <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
+                    <li>Wood</li>
+                    <li>6</li>
+                  </li>
+                </Link>
+              </ul>
+            </div>
+          </div><div className="absolute p-2 bg-white right-0 z-10 top-9 shadow-2xl">
+            <div className="relative">
+              <form action="">
+                <input
+                  type="search"
+                  className="border-2 border-[#9F9F9F] p-2 pl-4 pr-8 rounded-lg outline-none"
+                />
+                <IoSearchSharp className="text-xl absolute top-3 right-8" onClick={handleclick()} />
+              </form>
+            </div>
+            <div className="p-2">
+              <h3 className="font-medium text-xl">Categories</h3>
+              <ul className="mt-4 flex flex-col gap-3 text-[#9F9F9F]">
+                <Link to="link">
+                  <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
+                    <li>Crafts</li>
+                    <li>2</li>
+                  </li>
+                </Link>
+                <Link to="link">
+                  <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
+                    <li>Design</li>
+                    <li>8</li>
+                  </li>
+                </Link>
+                <Link to="link">
+                  <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
+                    <li>Handmade</li>
+                    <li>7</li>
+                  </li>
+                </Link>
+                <Link to="link">
+                  <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
+                    <li>Interior</li>
+                    <li>1</li>
+                  </li>
+                </Link>
+                <Link to="link">
+                  <li className="flex justify-between hover:bg-[#9F9F9F] hover:text-white p-1">
+                    <li>Wood</li>
+                    <li>6</li>
+                  </li>
+                </Link>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -375,6 +423,7 @@ const B_blog = () => {
 
       <div className="mt-20">
         <SubFooter />
+        <Footer2 />
       </div>
     </div>
   );
