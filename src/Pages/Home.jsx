@@ -5,8 +5,6 @@ import AbhiCards from "../Components/AbhiCards";
 import Footer from "../Components/Footer";
 import Testimonials from "../Components/Testimonials";
 import SubFooter from "../Components/SubFooter";
-import Shop from "./Shop";
-import OurStory from "./OurStory";
 
 const Home = () => {
   return (
