@@ -18,12 +18,10 @@ import SubFooter from "./SubFooter";
 import Footer2 from "./Footer2";
 
 const B_blog = () => {
-  // const [value, setvalue] = useState("")
+
+  const [open, setOpen] = useState(false);
 
 
-  const handleclick = () => {
-
-  }
   return (
     <div>
       <section>
@@ -49,19 +47,26 @@ const B_blog = () => {
         </div>
       </section>
 
-      {/* hamburger */}
-      <section className="relative  ">
+      <section className="relative lg:hidden">
         <div className="h-8 flex items-center justify-end pr-5 shadow-sm shadow-slate-500 relative">
-          <GiHamburgerMenu />
+          <GiHamburgerMenu open={open} onClick={() => setOpen(!open)} />
         </div>
+
+        {open && (
+          <div className="hamburger absolute p-2 bg-white right-0 z-10 top-9 shadow-2xl">
+
         <div>
           <div className="absolute p-2 bg-white right-0 z-10 top-9 shadow-2xl">
+
             <div className="relative">
               <form action="">
                 <input
                   type="search"
                   className="border-2 border-[#9F9F9F] p-2 pl-4 pr-8 rounded-lg outline-none"
                 />
+
+                <IoSearchSharp className="text-xl absolute top-3 right-8" />
+
                 <IoSearchSharp className="text-xl absolute top-3 right-8" onClick={handleclick()} />
               </form>
             </div>
@@ -108,6 +113,7 @@ const B_blog = () => {
                   className="border-2 border-[#9F9F9F] p-2 pl-4 pr-8 rounded-lg outline-none"
                 />
                 <IoSearchSharp className="text-xl absolute top-3 right-8" onClick={handleclick()} />
+
               </form>
             </div>
             <div className="p-2">
@@ -146,8 +152,9 @@ const B_blog = () => {
               </ul>
             </div>
           </div>
-        </div>
+        )}
       </section>
+
 
       <section className="mt-24">
         {/* outer div */}
