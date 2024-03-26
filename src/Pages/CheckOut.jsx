@@ -129,7 +129,7 @@ const CheckOut = () => {
             </div>
           </form>
         </div>
-        <div className="flex-col lg:flex lg:w-full mt-8 lg:ml-12 ">
+        <div className="flex-col lg:flex lg:w-full mt-8 lg:ml-12 ml-5 mr-5">
           <div className="lg:flex gap-[65%] font-poppins">
             <h1 className="mt-3">Product</h1>
             <h1 className="mt-3">Subtotal</h1>
