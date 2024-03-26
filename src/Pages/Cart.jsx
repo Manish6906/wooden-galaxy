@@ -1,57 +1,41 @@
 import React from 'react';
-import AbhiCards_2 from '../Components/AbhiCards_2';
 import SubFooter from '../Components/SubFooter';
 import Footer from '../Components/Footer';
-import { Link } from "react-router-dom";
-import Nav from "../assets/faq/Nav.png";
+import CartNav from '../Components/CartNav';
+import main from "../assets/single_products/main_image.png";
 
 const Cart = () => {
-    return (
-      <>
-      <section>
-          <div className="w-full h-50 flex justify-center">
-            <img src={Nav} alt="" />
-  
-            <div className="absolute flex flex-col justify-center mt-2 sm:mt-14">
-              <h1 className="font-medium text-3xl sm:text-5xl">Cart</h1>
-              <ul className="mt-1 sm:mt-5 flex gap-1">
-                <li>
-                  <Link to="/" style={{ opacity: 1 }}>
-                    Home
-                  </Link>
-                </li>
-                <li style={{ opacity: 0.5 }}>&gt;</li>
-                <li>
-                  <Link to="/Blog" style={{ opacity: 0.5 }}>
-                    Cart
-                  </Link>
-                </li>
-              </ul>
+  return (
+    <>
+      <CartNav />
+      <section className='md:mx-20 mt-10 mx-5'>
+        <div className='flex flex-col md:flex-row justify-between md:mx-4 md:my-8'>
+          <div className='md:w-3/4'>
+            <ul className='flex justify-between bg-[#F9F1E7] md:px-36 md:mx-5'>
+              <li>Product</li>
+              <li>Price</li>
+              <li>Quantity</li>
+              <li>Subtotal</li>
+            </ul>
+            <div className='flex justify-between my-5 md:my-5 items-center md:mx-10'>
+              <div className='flex'>
+                <img className='w-[105px] h-[105px] md:w-[105px] md:h-[105px]' src={main} alt="" />
+                assgard sofa
+              </div>
+              <div>Rs. 250,000.00</div>
+              <div>1</div>
+              <div>Rs. 250,000.00</div>
             </div>
           </div>
-        </section>
-
-        <section className='h-20 mx-20'>
-        <div className='flex flex-col md:flex-row justify-between mx-4'>
-          <div>
-            <div>
-              <ul>
-                <li>Product</li>
-                <li>Price</li>
-                <li>Quantity</li>
-                <li>Subtotal</li>
-              </ul>
-            </div>
-            <div>Hello</div>
+          <div className='bg-[#F9F1E7] my-3 md:my-0 md:block md:w-3/12'>
+            Cart Totals
           </div>
-          <div className='bg-[#F9F1E7]'>hello</div>
         </div>
       </section>
+      <SubFooter />
+      <Footer />
+    </>
+  )
+}
 
-        <SubFooter />
-        <Footer />
-      </>
-    )
-  }
-
-  export default Cart
+export default Cart

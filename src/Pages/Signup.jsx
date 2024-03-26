@@ -40,7 +40,7 @@ function Signup() {
                                     <input type="text" id="username" className="w-full border-2 border-[#B5B0AB] h-1/2 p-4 rounded-full md:h-14 outline-[#8f8b86]" />
                                 </div>
                             </div>
-                            <div className="mb-4 px-3">
+                            <div className="mb-4 mt-4 px-3">
                                 <label className="block px-3 text-lg text-[#444B59]" for="password">Enter Mobile Number</label>
                                 <input type="number" id="password" className="w-full border-2 border-[#B5B0AB]  h-1/2 p-4 rounded-full md:h-14 outline-[#8f8b86]" />
                             </div>
@@ -61,7 +61,7 @@ function Signup() {
 
                             {/* SIGN IN Button  */}
                             <div className='flex justify-center'>
-                                <button className="w-1/2 border-2 p-2 rounded-full outline-none text-[white] border-[#B5B0AB] md:h-14 bg-[#B5B0AB]">SUBMIT</button>
+                                <button className="w-1/2 border-2 p-2 mt-4 rounded-full outline-none text-[white] border-[#B5B0AB] md:h-14 bg-[#B5B0AB]">SUBMIT</button>
                             </div>
 
                             <div className="mt-3 flex items-center justify-center">
