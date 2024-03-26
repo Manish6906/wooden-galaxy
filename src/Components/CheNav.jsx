@@ -8,8 +8,8 @@ function CheNav() {
         <div className="w-full h-50 flex justify-center">
         <img src={Nav} alt="" />
         <div className="absolute flex flex-col justify-center mt-2 sm:mt-14">
-          <h1 className="font-medium text-3xl sm:text-5xl">Cart</h1>
-          <ul className="mt-1 sm:mt-5 flex gap-1">
+          <h1 className="font-medium text-3xl sm:text-5xl">Checkout</h1>
+          <ul className="mt-1 sm:mt-5 flex gap-1 lg:ml-10">
             <li>
               <Link to="/" style={{ opacity: 1 }}>
                 Home
