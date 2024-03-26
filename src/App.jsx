@@ -20,6 +20,9 @@ import { dining, bedroom, living } from "./utils/data.js";
 import DBL from "./Pages/DBL.jsx";
 import Footer2 from "./Components/Footer2";
 import CheckOut from "./Pages/CheckOut.jsx";
+import CartNav from "./Components/CartNav.jsx";
+import CoNav from "./Components/CoNav.jsx";
+import CheNav from "./Components/CheNav.jsx";
 
 const App = () => {
   return (
@@ -37,6 +40,9 @@ const App = () => {
         <Route path="/Login" element={<Login />} />
         <Route path="/Signup" element={<Signup />} />
         <Route path="/Cart" element={<Cart />} />
+        <Route path="/CartNav" element={<CartNav />} />
+        <Route path="/CoNav" element={<CoNav />} />
+        <Route path="/CheNav" element={<CheNav />} />
         <Route path="/Single_product" element={<Single_product />} />
         <Route
           path="/dining"
