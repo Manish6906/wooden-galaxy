@@ -13,7 +13,7 @@ const B_experience = () => {
         <div className="md:flex md:gap-20">
           <div className="flex flex-col items-center">
             <img
-              className="rounded-xl"
+              className="rounded-xl h-[445px] w-[629px]"
               src={rectangle}
               alt="image"
             />
@@ -69,7 +69,7 @@ const B_experience = () => {
               />
             </div>
 
-            <div className="flex flex-col items-center">
+            <div className="flex h-[629px] w-[445px] flex-col items-center">
               <img
                 className="rounded-xl"
                 src={material}
