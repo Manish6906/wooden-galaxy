@@ -9,7 +9,7 @@ function CheNav() {
         <img src={Nav} alt="" className='w-full md:w-full lg:w-full' />
         <div className="absolute flex flex-col justify-center mt-2 sm:mt-14">
           <h1 className="font-medium text-3xl sm:text-5xl">Checkout</h1>
-          <ul className="mt-1 sm:mt-5 flex gap-1 lg:ml-10">
+          <ul className="mt-1 sm:mt-5 flex gap-1 lg:ml-10 md:ml-10">
             <li>
               <Link to="/" style={{ opacity: 1 }}>
                 Home
