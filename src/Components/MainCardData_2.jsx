@@ -53,7 +53,10 @@ const McardData = [
         imagescr : img1,
         heading: "Respira",
         para: "Six seated Sofa",
-        price: "Rs 9000.00"
+        price: "Rs 9000.00",
+        tag_name:"-30%",
+        tag_color:"#E97171"
+
     },    
 
       {
@@ -61,7 +64,10 @@ const McardData = [
         imagescr : img6,
         heading: "Lolito",
         para: "Luxuri Big Sofa ",
-        price: "Rs 9000.000"
+        price: "Rs 9000.000",
+        tag_name:"-30%",
+        tag_color:"#E97171"
+
     },
 
 
@@ -70,7 +76,9 @@ const McardData = [
         imagescr : img8,
         heading: "Slytherine",
         para: " stylish cafe chair",
-        price: "Rs 2500.000"
+        price: "Rs 2500.000",
+        tag_name:"-30%",
+        tag_color:"#E97171"
     },
     
 
@@ -79,7 +87,9 @@ const McardData = [
         imagescr : img9,
         heading: "Laviosa ",
         para: " stylish cafe chair",
-        price: "Rs 2500.000"
+        price: "Rs 2500.000",
+        tag_name:"-30%",
+        tag_color:"#E97171"
     },
     
   
@@ -88,7 +98,9 @@ const McardData = [
         imagescr : img1,
         heading: "Respira",
         para: "Six seated Sofa",
-        price: "Rs 9000.00"
+        price: "Rs 9000.00",
+        tag_name:"-30%",
+        tag_color:"#E97171"
     },    
 
       {
@@ -96,7 +108,9 @@ const McardData = [
         imagescr : img6,
         heading: "Lolito",
         para: "Luxuri Big Sofa ",
-        price: "Rs 9000.000"
+        price: "Rs 9000.000",
+        tag_name:"-30%",
+        tag_color:"#E97171"
     },
 
 
@@ -105,7 +119,9 @@ const McardData = [
         imagescr : img8,
         heading: "Slytherine",
         para: " stylish cafe chair",
-        price: "Rs 2500.000"
+        price: "Rs 2500.000",
+        tag_name:"-30%",
+        tag_color:"#E97171"
     },
     
 
@@ -114,7 +130,9 @@ const McardData = [
         imagescr : img9,
         heading: "Laviosa ",
         para: " stylish cafe chair",
-        price: "Rs 2500.000"
+        price: "Rs 2500.000",
+        tag_name:"-30%",
+        tag_color:"#E97171"
     },
  
     {
@@ -122,7 +140,9 @@ const McardData = [
         imagescr : img1,
         heading: "Respira",
         para: "Six seated Sofa",
-        price: "Rs 9000.00"
+        price: "Rs 9000.00",
+        tag_name:"-30%",
+        tag_color:"#E97171"
     },    
 
       {
@@ -130,7 +150,9 @@ const McardData = [
         imagescr : img6,
         heading: "Lolito",
         para: "Luxuri Big Sofa ",
-        price: "Rs 9000.000"
+        price: "Rs 9000.000",
+        tag_name:"-30%",
+        tag_color:"#E97171"
     },
 
 
@@ -139,7 +161,9 @@ const McardData = [
         imagescr : img8,
         heading: "Slytherine",
         para: " stylish cafe chair",
-        price: "Rs 2500.000"
+        price: "Rs 2500.000",
+        tag_name:"-30%",
+        tag_color:"#E97171"
     },
     
 
@@ -148,7 +172,9 @@ const McardData = [
         imagescr : img9,
         heading: "Laviosa ",
         para: " stylish cafe chair",
-        price: "Rs 2500.000"
+        price: "Rs 2500.000",
+        tag_name:"-30%",
+        tag_color:"#E97171"
     },
   
     {
@@ -156,7 +182,9 @@ const McardData = [
         imagescr : img1,
         heading: "Respira",
         para: "Six seated Sofa",
-        price: "Rs 9000.00"
+        price: "Rs 9000.00",
+        tag_name:"-30%",
+        tag_color:"#E97171"
     },    
 
       {
@@ -164,7 +192,9 @@ const McardData = [
         imagescr : img6,
         heading: "Lolito",
         para: "Luxuri Big Sofa ",
-        price: "Rs 9000.000"
+        price: "Rs 9000.000",
+        tag_name:"-30%",
+        tag_color:"#E97171"
     },
 
 
@@ -173,7 +203,9 @@ const McardData = [
         imagescr : img8,
         heading: "Slytherine",
         para: " stylish cafe chair",
-        price: "Rs 2500.000"
+        price: "Rs 2500.000",
+        tag_name:"-30%",
+        tag_color:"#E97171"
     },
     
 
@@ -182,7 +214,9 @@ const McardData = [
         imagescr : img9,
         heading: "Laviosa ",
         para: " stylish cafe chair",
-        price: "Rs 2500.000"
+        price: "Rs 2500.000",
+        tag_name:"-30%",
+        tag_color:"#E97171"
     },
     
    

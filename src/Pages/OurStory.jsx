@@ -22,7 +22,7 @@ const OurStory = () => {
             Our Story
           </p>
           <p className="">
-            <ul className="md:mt-3 flex gap-1 ml-10 border-2 -mt-10">
+            <ul className="md:mt-3 flex gap-1 ml-10 mt-10">
               <li>
                 <Link
                   to="/"

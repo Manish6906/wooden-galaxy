@@ -32,11 +32,11 @@ const Contact = () => {
           </div>
         </div>
 
-        <div class="mt-8 md:mt-24">
-          <h1 class="text-2xl md:text-4xl font-poppins font-semibold text-center">
+        <div className="mt-8 md:mt-24">
+          <h1 className="text-2xl md:text-4xl font-poppins font-semibold text-center">
             Get In Touch With Us
           </h1>
-          <h2 class="text-sm md:text-base ml-8 mr-8 text-center font-poppins text-[#9F9F9F] my-2 md:my-4">
+          <h2 className="text-sm md:text-base ml-8 mr-8 text-center font-poppins text-[#9F9F9F] my-2 md:my-4">
             For More Information About Our Product & Services. Please Feel Free
             To Drop Us <br /> An Email. Our Staff Always Be There To Help You
             Out. Do Not Hesitate!
@@ -94,48 +94,48 @@ const Contact = () => {
           </div>
           <div className=" font-poppins">
             <form>
-              <div class="mb-6 md:mb-10">
-                <label class="block font-poppins text-sm font-medium text-gray-700">
+              <div className="mb-6 md:mb-10">
+                <label className="block font-poppins text-sm font-medium text-gray-700">
                   Your Name
                 </label>
                 <input
                   type="text"
                   name="userName"
-                  class="mt-2 md:mt-6 border border-gray-300 rounded-md h-12 md:h-16 w-full md:w-[490px]"
+                  className="mt-2 md:mt-6 border border-gray-300 rounded-md h-12 md:h-16 w-full md:w-[490px]"
                 />
               </div>
-              <div class="mb-6 md:mb-10">
-                <label class="block text-sm font-poppins font-medium text-gray-700">
+              <div className="mb-6 md:mb-10">
+                <label className="block text-sm font-poppins font-medium text-gray-700">
                   Email Address
                 </label>
                 <input
                   type="email"
                   name="email"
-                  class="mt-2 md:mt-6 border border-gray-300 rounded-md h-12 md:h-16 w-full"
+                  className="mt-2 md:mt-6 border border-gray-300 rounded-md h-12 md:h-16 w-full"
                 />
               </div>
-              <div class="mb-6 md:mb-10">
-                <label class="block text-sm font-poppins font-medium text-gray-700">
+              <div className="mb-6 md:mb-10">
+                <label className="block text-sm font-poppins font-medium text-gray-700">
                   Subject
                 </label>
                 <input
                   type="text"
                   name="subject"
-                  class="mt-2 md:mt-6 border border-gray-300 rounded-md h-12 md:h-16 w-full"
+                  className="mt-2 md:mt-6 border border-gray-300 rounded-md h-12 md:h-16 w-full"
                 />
               </div>
-              <div class="mb-6 md:mb-10">
-                <label class="block text-sm font-poppins font-medium text-gray-700">
+              <div className="mb-6 md:mb-10">
+                <label className="block text-sm font-poppins font-medium text-gray-700">
                   Message
                 </label>
                 <textarea
                   rows="4"
-                  class="mt-2 md:mt-6 border border-gray-300 rounded-md w-full"
+                  className="mt-2 md:mt-6 border border-gray-300 rounded-md w-full"
                 ></textarea>
               </div>
               <button
                 type="submit"
-                class="bg-[#B88E2F] text-white font-poppins px-10 md:px-20 py-2 rounded-md hover:bg-[#aea591]"
+                className="bg-[#B88E2F] text-white font-poppins mb-12 px-10 md:px-20 py-2 rounded-md hover:bg-[#aea591]"
               >
                 Submit
               </button>
