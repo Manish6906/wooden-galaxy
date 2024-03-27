@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Dimg from "../assets/faq/Dimg.png";
 import Pimg from "../assets/faq/Pimg.png";
 import Yimg from "../assets/faq/Yimg.png";
-import Nav from "../assets/faq/Nav.png";
+import img from "../assets/OurStory.png";
 import Footer2 from '../Components/Footer2'
 import SubFooter from '../Components/SubFooter'
 const Faq = () => {
@@ -69,7 +69,7 @@ const Faq = () => {
       <div>
       <div className="relative">
         <img
-          src={Nav}
+          src={img}
           alt="An Image"
           className="w-full h-[240px] z-[-1] opacity-50 object-cover "
         />
@@ -202,12 +202,12 @@ const Faq = () => {
             <img
               src={Yimg}
               alt=""
-              className="h-[358px] lg:h-[403px] w-full lg:w-[586px] rounded-[30px 0 0 30px]"
+              className="h-[358px] lg:h-[403px] w-full lg:w-[586px] rounded-[30px 0 0 30px] mb-20"
             />
           </div>
         </div>
       </div>
-      <SubFooter /> 
+      <SubFooter  /> 
       <Footer2/>
     </>
   );

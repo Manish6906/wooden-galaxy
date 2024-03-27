@@ -102,11 +102,11 @@ const B_blog = () => {
 
 
       <section className="mt-24">
-        {/ outer div /}
+        {/* {/ outer div /} */}
         <div className="md:flex md:flex-row md:justify-center md:gap-12 sm:gap-2">
-          {/ main div /}
+          {/* {/ main div /} */}
           <div className="flex flex-col items-center">
-            {/ first div /}
+            {/* {/ first div /} */}
             <div className="">
               <div className="md:w-[700px] rounded-lg p-2 md:p-0 sm:p-3">
                 <img src={millennial} alt="millennial" />
@@ -145,7 +145,7 @@ const B_blog = () => {
               </div>
             </div>
 
-            {/ second div /}
+            {/* {/ second div /} */}
             <div className="mt-10">
               <div className="md:w-[700px] rounded-lg p-2 md:p-0 sm:p-3">
                 <img src={decorating} alt="decorating" />
@@ -184,7 +184,7 @@ const B_blog = () => {
               </div>
             </div>
 
-            {/ third div /}
+            {/* {/ third div /} */}
             <div className="mt-10">
               <div className="md:w-[700px] p-2 md:p-0 sm:p-3">
                 <img src={handmade} alt="handmade" />
@@ -224,9 +224,9 @@ const B_blog = () => {
             </div>
           </div>
 
-          {/ aside div /}
+          {/* {/ aside div /} */}
           <div className="hidden  lg:flex flex-col">
-            {/ search box /}
+            {/* {/ search box /} */}
             <div className="relative">
               <form action="">
                 <input
@@ -237,7 +237,7 @@ const B_blog = () => {
               </form>
             </div>
 
-            {/ Categories /}
+            {/* {/ Categories /} */}
             <div className="p-7">
               <h3 className="font-medium text-xl">Categories</h3>
               <ul className="mt-4 flex flex-col gap-7 text-[#9F9F9F]">
@@ -274,7 +274,7 @@ const B_blog = () => {
               </ul>
             </div>
 
-            {/ recent posts /}
+            {/* {/ recent posts /} */}
             <div className="p-7 mt-5">
               <h3 className="font-medium text-xl">Recent Posts</h3>
 

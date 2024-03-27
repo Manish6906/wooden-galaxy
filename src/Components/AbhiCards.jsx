@@ -1,6 +1,6 @@
 import React from "react";
 import MainCards from "./MainCards";
-
+import { Link } from "react-router-dom";
 // import Adata from "./Adata.js"/;
 import img1 from "../assets/Mask.png";
 import img2 from "../assets/image2.png";
@@ -15,7 +15,7 @@ import img3 from "../assets/image3.png";
 export default function AbhiCards() {
   return (
     <>
-      <div className="flex border-4 relative w-full flex-wrap px-[5%] ">
+      <div className="flex  relative w-full flex-wrap px-[5%] ">
         <div className="basis-full shrink-0 text-center">
           <h1 className="font-bold text-3xl">Browse The Range</h1>
           <p className=" text-xl">
@@ -24,28 +24,36 @@ export default function AbhiCards() {
         </div>
 
         {/*  first div for three div display  */}
+        <div className="flex text-center mt-10">
+          <Link to="/dining">
+            <Cards imgLink={img1} title={"Dining"} />
+          </Link>
 
-        <Cards imgLink={img1} title={"Dining"} />
-        <Cards imgLink={img2} title={"Living"} />
-        <Cards imgLink={img3} title={"Bedroom"} />
+          <Link to="/living">
+            {" "}
+            <Cards imgLink={img2} title={"Living"} />
+          </Link>
+          <Link to="/bedroom">
+            <Cards imgLink={img3} title={"Bedroom"} />{" "}
+          </Link>
+        </div>
       </div>
 
-  {/*  Maincards */}
+      {/*  Maincards */}
 
       <div className=" p-6 font-bold text-4xl text-center ">
         <h1>Our Products</h1>
       </div>
-    
+
       <div>
-        <MainCards/>
+        <MainCards />
       </div>
 
-    <div className="p-6 ">
-    <button class="border-2 border-yellow-600 text-yellow-600 font-bold px-16 py-2 flex mx-auto ">
-  Show More
-</button>
-    </div>
-
+      <div className="p-6 ">
+        <button className="border-2 border-yellow-600 text-yellow-600 font-bold px-16 py-2 flex mx-auto ">
+          Show More
+        </button>
+      </div>
     </>
   );
 }
@@ -53,7 +61,7 @@ export default function AbhiCards() {
 // this is function for first div
 const Cards = ({ imgLink, title }) => {
   return (
-    <div className="card flex flex-col basis-full  sm:basis-1/4  p-3 md:basis-0 flex-1 shrink-0  justify-evenly font-bold">
+    <div className="card space-y-8 flex flex-col basis-full  sm:basis-1/4  p-3 md:basis-0 flex-1 shrink-0  justify-evenly font-bold">
       <img src={imgLink} className=" rounded-lg  " alt="" />
       <div className="font-bold ">{title}</div>
     </div>

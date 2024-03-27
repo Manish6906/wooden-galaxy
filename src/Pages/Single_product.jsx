@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";
@@ -14,6 +14,26 @@ import ProductCard from "../Components/ProductCard";
 import Footer2 from "../Components/Footer2";
 
 const Single_product = () => {
+  // Button function
+  const [quantity, setQuantity] = useState(1);
+
+  const increaseQuantity = () => {
+    setQuantity((prevQuantity) => prevQuantity + 1);
+  };
+
+  const decreaseQuantity = () => {
+    if (quantity > 1) {
+      setQuantity((prevQuantity) => prevQuantity - 1);
+    }
+  };
+
+  //size function
+  const [selectedSize, setSelectedSize] = useState("S");
+
+  const selectSize = (size) => {
+    setSelectedSize(size);
+  };
+
   return (
     <>
       <div className="h-[100px] flex items-center justify-center sm:flex sm:justify-start sm:items-center bg-[#F9F1E7]  ">
@@ -101,15 +121,15 @@ const Single_product = () => {
             </p>
 
             <div className="flex gap-4 mb-4">
-              <button className="h-[30px] w-[30px] rounded-[5px] bg-[#B88E2F] text-center">
-                L
-              </button>
-              <button className="h-[30px] w-[30px] rounded-[5px] bg-[#F9F1E7] text-center">
-                XL
-              </button>
-              <button className="h-[30px] w-[30px] rounded-[5px] bg-[#F9F1E7] text-center">
-                XS
-              </button>
+              {["S", "M", "L"].map((size) => (
+                <button
+                  key={size}
+                  onClick={() => selectSize(size)}
+                  className={`h-[30px] w-[30px] rounded-[5px] text-center ${selectedSize === size ? 'bg-[#B88E2F]' : 'bg-[#F9F1E7]'}`}
+                >
+                  {size}
+                </button>
+              ))}
             </div>
 
             <p className="text-[1rem] text-[#9F9F9F] w-[27px] h-[21px] mb-[20px]">
@@ -128,13 +148,13 @@ const Single_product = () => {
                 hover:text-white"
               >
                 <div>
-                  <button>-</button>
+                  <button onClick={decreaseQuantity}>-</button>
                 </div>
                 <div>
-                  <button>1</button>
+                  <button>{quantity}</button>
                 </div>
                 <div>
-                  <button>+</button>
+                  <button onClick={increaseQuantity}>+</button>
                 </div>
               </div>
 
@@ -248,7 +268,7 @@ const Single_product = () => {
       </div>
 
       <div className="p-6 ">
-        <button class="border-2 border-yellow-600 text-yellow-600 font-bold px-16 py-2 flex mx-auto ">
+        <button className="border-2 border-yellow-600 text-yellow-600 font-bold px-16 py-2 flex mx-auto ">
           Show More
         </button>
       </div>
