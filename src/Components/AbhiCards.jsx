@@ -24,9 +24,9 @@ export default function AbhiCards() {
         </div>
 
         {/*  first div for three div display  */}
-        <div className="flex text-center mt-10">
+        <div className="flex text-center  mt-10">
           <Link to="/dining">
-            <Cards imgLink={img1} title={"Dining"} />
+            <Cards  imgLink={img1} title={"Dining"}  />
           </Link>
 
           <Link to="/living">
