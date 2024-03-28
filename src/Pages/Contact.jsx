@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Nav from "../assets/faq/Nav.png";
 import { IoLocationSharp } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdAccessTimeFilled } from "react-icons/md";

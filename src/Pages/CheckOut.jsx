@@ -1,190 +1,189 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import checkout from "../assets/CheckoutNavbarImage.png";
+import CheNav from "../Components/CheNav";
 
 const CheckOut = () => {
   return (
     <>
-      <div className="relative">
-        <img
-          src={img}
-          alt="An Image"
-          className="w-full h-auto z-[-1] opacity-50"
-        />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-          <p className="font-medium text-2xl md:text-5xl font-poppins md:h-[72px] md:w-[233px]">
-            CheckOut
-          </p>
-          <p className="text-sm">
-            <strong>Home &gt;</strong> Checkout
-          </p>
-        </div>
-      </div>
-
-      <div className="lg:mt-60 lg:ml-44 lg:mr-36 ml-10 mr-10 lg:flex mt-10">
-        <div className="flex-none lg:w-[608px] sm:w-full md:flex-col">
-          <div>
-            <label className="md:text-3xl mt-4 md:mt-32 font-bold">
-              Billing details
-            </label>
-          </div>
-          <form action="#" method="post">
-            <div className="flex flex-col sm:flex-row mt-8 md:flex-row">
-              <div className="flex-none">
-                <label className="font-medium">First Name</label>
+      <CheNav />
+      <div className="lg:flex lg:mt-24">
+        <div className=" mt-8  md:ml-[15%] lg:ml-12">
+          <h1 className="ml-5 font-poppins">
+            <strong>Biling Details</strong>
+          </h1>
+          <form action="">
+            <div className="lg:flex flex mt-5">
+              <div>
+                <label htmlFor="" className="ml-5 font-poppins">
+                  <strong>First Name</strong>
+                </label>
                 <br />
                 <input
                   type="text"
-                  className="border-black border-2 opacity-50 rounded-md h-[75px] mt-2 sm:mt-0 md:mt-4 sm:w-[260px] mr-4 lg:w-[211px] w-full"
+                  className="border-2 w-[76.5%] lg:w-full h-[75px] ml-5 mb-5 md:w-[120%]  rounded-md"
                 />
               </div>
-              <div className="flex-initial mt-4 sm:mt-0">
-                <label className="font-medium">Last Name</label>
+              <div>
+                <label htmlFor="" className="ml-10 font-poppins md:ml-28 lg:ml-10 ">
+                  <strong>Last Name</strong>
+                </label>
                 <br />
                 <input
                   type="text"
-                  className="border-black border-2 opacity-50 rounded-md h-[75px] mt-2 sm:mt-0 md:mt-4 sm:w-[260px] mr-4 lg:w-[211px] w-full "
+                  className="border-2 w-[76.5%] lg:w-full ml-7 h-[75px] md:w-[100%] md:ml-28 lg:ml-10 rounded-md"
                 />
               </div>
             </div>
-            <div className="mt-8">
-              <label className="mt-5 font-medium">
-                Company Name (Optional)
-              </label>
-              <input
-                type="text"
-                className="border-black border-2 opacity-50 rounded-md h-[75px] mt-2 sm:mt-5 w-full lg:w-[453px] "
-              />
-            </div>
-            <div className="mt-8">
-              <label className="mt-5 font-medium">Country / Region</label>{" "}
-              <br />
-              <select
-                name=""
-                id=""
-                className="border-black border-2 opacity-50 rounded-md h-[75px] mt-2 sm:mt-5 w-full lg:w-[453px]"
-              >
-                <option value="">Sri Lanka</option>
-              </select>
-            </div>
-            <div className="mt-8">
-              <label className="mt-5 font-medium">Street address</label>
-              <br />
-              <input
-                type="text"
-                className="border-black border-2 opacity-50 rounded-md h-[75px] mt-2 sm:mt-5 w-full lg:w-[453px]"
-              />
-            </div>
-            <div className="mt-8">
-              <label className="mt-5 font-medium">Town / City</label>
-              <br />
-              <input
-                type="text"
-                className="border-black border-2 opacity-50 rounded-md h-[75px] mt-2 sm:mt-5 w-full lg:w-[453px]"
-              />
-            </div>
-            <div className="mt-8">
-              <label className="mt-5 font-medium">Province</label>
-              <br />
-              <select
-                name=""
-                id=""
-                className="border-black border-2 opacity-50 rounded-md h-[75px] mt-2 sm:mt-5 w-full lg:w-[453px]"
-              >
-                <option value="">Western Province</option>
-              </select>
-            </div>
-            <div className="mt-8">
-              <label className="mt-5 font-medium">ZIP Code</label>
-              <br />
-              <input
-                type="text"
-                className="border-black border-2 opacity-50 rounded-md h-[75px] mt-2 sm:mt-5 w-full lg:w-[453px]"
-              />
-            </div>
-            <div className="mt-8">
-              <label className="mt-5 font-medium">Phone</label>
-              <br />
-              <input
-                type="text"
-                className="border-black border-2 opacity-50 rounded-md h-[75px] mt-2 sm:mt-5 w-full lg:w-[453px]"
-              />
-            </div>
-            <div className="mt-8">
-              <label className="mt-5 font-medium">Email Address</label>
-              <br />
-              <input
-                type="text"
-                className="border-black border-2 opacity-50 rounded-md h-[75px] mt-2 sm:mt-5 w-full lg:w-[453px]"
-              />
-            </div>
-            <div className="mt-8">
-              <input
-                type="text"
-                className="border-black border-2 opacity-50 rounded-md h-[75px] mt-2 sm:mt-5 w-full lg:w-[453px]"
-              />
+            <div className="w-full">
+              <div>
+                <label htmlFor="" className="ml-5 font-poppins">
+                  <strong>Company Name ( Optional )</strong>
+                </label>{" "}
+                <br />
+                <input
+                  type="text"
+                  className="md:w-[600px] lg: border-2 h-[75px] w-[90%] ml-5 mt-3 mb-4 lg:w-[453px] rounded-md"
+                />
+              </div>
+              <div>
+                <label htmlFor="" className="ml-5 font-poppins">
+                  <strong>Country / Region</strong>
+                </label>{" "}
+                <br />
+                <select
+                  name=""
+                  id=""
+                  className="w-[90%] ml-5 md:w-[600px] lg: border-2 pl-4 h-[75px] mt-3 mb-4  lg:w-[453px] opacity-40 border-black rounded-md"
+                >
+                  <option value="Sri Lanka">Sri Lanka</option>
+                </select>
+              </div>
+              <div>
+                <label htmlFor="" className="ml-5 font-poppins">
+                  <strong>Street Address</strong>
+                </label>{" "}
+                <br />
+                <input
+                  type="text"
+                  className="md:w-[600px] lg: border-2 h-[75px] w-[90%] ml-5 mt-3 mb-4 lg:w-[453px] rounded-md"
+                />
+              </div>
+              <div>
+                <label htmlFor="" className="ml-5 font-poppins">
+                  <strong>Town / City</strong>
+                </label>{" "}
+                <br />
+                <input
+                  type="text"
+                  className="md:w-[600px] lg: border-2 h-[75px] w-[90%] ml-5 mt-3 mb-4 lg:w-[453px] rounded-md"
+                />
+              </div>
+              <div>
+                <label htmlFor="" className="ml-5 font-poppins">
+                  <strong>Province</strong>
+                </label>{" "}
+                <br />
+                <select
+                  name=""
+                  id=""
+                  className="w-[90%] ml-5 md:w-[600px] lg: border-2 border-black pl-4 h-[75px] mt-3 mb-4  lg:w-[453px] opacity-40 rounded-md"
+                >
+                  <option value="Western Province">Western Province</option>
+                </select>
+              </div>
+              <div>
+                <label htmlFor="" className="ml-5 font-poppins">
+                  <strong>ZIP code</strong>
+                </label>{" "}
+                <br />
+                <input
+                  type="text"
+                  className="md:w-[600px] lg: border-2 h-[75px] w-[90%] ml-5 mt-3 mb-4 lg:w-[453px] rounded-md"
+                />
+              </div>
+              <div>
+                <label htmlFor="" className="ml-5 font-poppins">
+                  <strong>Phone</strong>
+                </label>{" "}
+                <br />
+                <input
+                  type="text"
+                  className="md:w-[600px] lg: border-2 h-[75px] w-[90%] ml-5 mt-3 mb-4 lg:w-[453px] rounded-md"
+                />
+              </div>
+              <div>
+                <label htmlFor="" className="ml-5 font-poppins">
+                  <strong>Email Address</strong>
+                </label>{" "}
+                <br />
+                <input
+                  type="text"
+                  className="md:w-[600px] lg: border-2 h-[75px] w-[90%] ml-5 mt-3 mb-4 lg:w-[453px] rounded-md"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  className="md:w-[600px] lg: border-2 h-[75px] w-[90%] ml-5 mt-6 lg:w-[453px] rounded-md pl-2"
+                  placeholder=" Additional Information"
+                />
+              </div>
             </div>
           </form>
         </div>
-
-        <div className="flex-initial w-full mt-10">
-          <div className="flex flex-col lg:flex-row lg:gap-80 gap-4 ">
-            <div>
-              <h1 className="font-medium text-xl lg:mt-4 sm:mt-2">Product</h1>
-              <h1 className="opacity-50 lg:mt-4 sm:mt-2">Asgaard sofa X 1</h1>
-              <h1 className="font-medium lg:mt-4 sm:mt-2">Subtotal</h1>
-              <h1 className="font-medium lg:mt-4 sm:mt-2">Total</h1>
-            </div>
-            <div>
-              <h1 className="font-medium text-xl lg:mt-4 sm:mt-2">Subtotal</h1>
-              <h1 className="text-base lg:mt-4 sm:mt-2">Rs.250,000.00</h1>
-              <h1 className="text-base lg:mt-4 sm:mt-2">Rs.250,000.00</h1>
-              <p className="mb-4 mt-5 font-bold w-[178px] h-[36px] text-[#B88E2F;] text-2xl lg:-ml-10 sm:ml-1  sm:mt-2">
-                Rs.250,000.00
-              </p>
-            </div>
+        <div className="flex-col lg:flex lg:w-full mt-8 lg:ml-12 ml-5 mr-5 md:ml-12">
+          <div className="lg:flex gap-[65%] font-poppins md:flex ">
+            <h1 className="mt-3"><strong>Product</strong></h1>
+            <h1 className="mt-3"><strong>Subtotal</strong></h1>
           </div>
+          <div className="lg:flex gap-[54.5%] font-poppins md:flex md:gap-[56%]">
+            <h1 className="mt-3">Asgaard sofa x 1</h1>
+            <h1 className="mt-3">Rs 250,000.00</h1>
+          </div>
+          <div className="lg:flex gap-[63%] font-poppins md:flex ">
+            <h1 className="mt-3">Subtotal</h1>
+            <h1 className="mt-3">Rs 250,000.00</h1>
+          </div>
+          <div className="lg:flex gap-[55%] font-poppins md:flex md:gap-[60%]">
+            <h1 className="mt-3">Total</h1>
+            <h1 className="mt-3 text-[#B88E2F] font-bold h-[36px] text-2xl leading-9 lg:w-[78px] lg:h-[36px]">
+              Rs<span className="ml-1 lg:mb-12">250,000.00</span>
+            </h1>
+          </div>
+
           <hr />
           <div>
-            <input
-              type="radio"
-              name="paymentMethod"
-              className="mt-3 font-medium"
-            />
-            Direct Bank Transfer
-            <p className="opacity-50 mt-3">
+            <p className="mt-4 font-poppins mb-4 lg:mt-12">
               Make your payment directly into our bank account. Please use your
               Order ID as the payment reference. Your order will not be shipped
               until the funds have cleared in our account.
             </p>
-            <div className="opacity-50">
-              <input
-                type="radio"
-                name="paymentMethod"
-                className="opacity-50 mt-3"
-              />
-              Direct Bank Transfer <br />
-              <input
-                type="radio"
-                name="paymentMethod"
-                className="opacity-50 mt-3"
-              />
-              Cash On Delivery
-            </div>
-            <p className="mt-4 font-medium tracking-wider font-poppins">
+            <input type="radio" name="btn" className="font-poppins" />
+            <label htmlFor="" className="font-poppins">&nbsp;
+              Direct Bank Transfer
+            </label>
+            <br />
+            <input type="radio" name="btn" className="font-poppins" />
+            <label htmlFor="" className="font-poppins">&nbsp;
+              Cash on Delivery
+            </label>
+            <br />
+          </div>
+          <div>
+            <p className="font-poppins mt-4 mb-4">
               Your personal data will be used to support your experience
               throughout this website, to manage access to your account, and for
-              other purposes described in our
-              <span className="font-bold">privacy policy.</span>
+              other purposes described in our privacy policy.
             </p>
-            <button className="rounded-2xl border-black border-2 lg:ml-28 lg:top-[1118px] lg:left-[883px] lg:w-[318px] lg:h-[64px] lg:mt-8 w-full mt-8 h-16">
-              Place order
+          </div>
+          <div className="lg:w-full ">
+            <button className="border-2 border-black rounded-md font-poppins p-4 w-full ">
+              Place Order
             </button>
-          </div><br /><br />
+          </div>
         </div>
       </div>
     </>
-  )
+  );
 };
 
 export default CheckOut;
