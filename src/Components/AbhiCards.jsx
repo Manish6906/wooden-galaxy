@@ -17,8 +17,8 @@ export default function AbhiCards() {
     <>
       <div className="flex  relative w-full flex-wrap px-[5%] ">
         <div className="basis-full shrink-0 text-center">
-          <h1 className="font-bold text-3xl">Browse The Range</h1>
-          <p className=" text-xl">
+          <h1 className="font-bold font-poppins text-[#333333]  text-[32px] leading-[48px]">Browse The Range</h1>
+          <p className=" text-[20px] leading-[30px] text-center text-[#666666] font-normal ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </div>
@@ -50,7 +50,7 @@ export default function AbhiCards() {
       </div>
 
       <div className="p-6 ">
-        <button className="border-2 border-yellow-600 text-yellow-600 font-bold px-16 py-2 flex mx-auto ">
+        <button className="border border-[#b88e2f] text-[#b88e2f] font-poppins font-semibold text-[16px] leading-6 px-16 py-2 flex mx-auto ">
           Show More
         </button>
       </div>
@@ -61,9 +61,9 @@ export default function AbhiCards() {
 // this is function for first div
 const Cards = ({ imgLink, title }) => {
   return (
-    <div className="card space-y-8 flex flex-col basis-full  sm:basis-1/4  p-3 md:basis-0 flex-1 shrink-0  justify-evenly font-bold">
+    <div className="card space-y-3 flex flex-col basis-full  sm:basis-1/4  p-3 md:basis-0 flex-1 shrink-0  justify-evenly font-bold">
       <img src={imgLink} className=" rounded-lg  " alt="" />
-      <div className="font-bold ">{title}</div>
+      <div className="font-semibold text-[24px] text-[#333333] leading-9 text-center font-poppins ">{title}</div>
     </div>
   );
 };
