@@ -25,16 +25,16 @@ const Testimonials = () => {
     <div>
 
       <div className='py-8'>
-        <p className='text-sm text-[#E58411] text-center tracking-[0.3rem] font-semibold uppercase mb-6'>Testimonials</p>
-        <h2 className='text-center text-3xl italic mt-3 font-semibold mb-3'>Our Client Review</h2>
+        <p className='text-sm text-[#E58411] font-abhaya-libre text-center tracking-[0.3rem] leading-5 font-medium uppercase mb-6'>Testimonials</p>
+        <h2 className='text-center text-[42px] leading-[50px] italic mt-3 font-normal font-ABeeZee mb-3'>Our Client Reviews</h2>
       </div>
 
       <div className='flex flex-col items-center md:flex-row md:justify-center md:gap-5'>
 
         {/* FIRST IMAGE */}
 
-        <div className='flex flex-col items-center relative mb-4 '>
-          <img className="h-96 w-64 relative" src={image} alt="image1" />
+        <div className='flex flex-col items-center relative mb-4'>
+          <img className="h-96 w-64 relative object-cover" src={image} alt="image1" />
 
           <div className='hidden md:h-[45px] md:w-[45px] md:bg-gray-300  md:text-xl md:rounded-full md:flex 
           md:items-center md:justify-center md:absolute md:top-[31.1%] md:right-[88%] md:z-10'>
@@ -46,14 +46,14 @@ const Testimonials = () => {
           <div className='h-[150px] w-[215px] bg-white  rounded-2xl absolute top-[44%]'>
 
             <div className='h-[50px] w-[50px] bg-white absolute left-[39%]  bottom-[123px] rounded-[50%]'>
-              <img className='h-[40px] w-[40px] rounded-[50%] text-center ml-[4.5px] mt-1 ' src={image1_1} alt="" />
+              <img className='h-[40px] w-[40px] rounded-[50%] object-cover text-center ml-[4.5px] mt-1 ' src={image1_1} alt="" />
 
             </div>
  
             <div>
-              <p className='font-semibold text-center mt-[20px]'>John Doe.</p>
-              <p className='text-gray-600 text-[10px] text-center'>Lorem, ipsum dolor.</p>
-              <p className='text-gray-500 text-[9px] text-center mt-[15px] mx-2'>"Lorem ipsum dolor sit amet consectetur
+              <p className='font-normal text-[#1e1e1e] font-ABeeZee italic text-sm leading-5 text-center mt-[20px]'>John Doe.</p>
+              <p className='text-[#1e1e1e] text-[12px] font-abhaya-libre leading-[14px] font-medium text-center'>Lorem, ipsum dolor.</p>
+              <p className='text-[#1e1e1e] text-[14px] line-clamp-2 leading-4 font-abhaya-libre font-medium text-center mt-[15px] mx-2'>"Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Repellat
                 similique"
               </p>
@@ -80,15 +80,15 @@ const Testimonials = () => {
 
           <div className='h-[150px] w-[215px] bg-white  rounded-2xl absolute top-[51.5%]'>
 
-            <div className='h-[50px] w-[50px] bg-white absolute left-[43%]  bottom-[123px] rounded-[50%]'>
-              <img className='h-[40px] w-[40px] rounded-[50%] text-center ml-[4.5px] mt-1 ' src={image3} alt="" />
+            <div className='h-[50px] w-[50px] bg-white absolute left-[43%] bottom-[123px] rounded-[50%]'>
+              <img className='h-[40px] w-[40px] rounded-[50%] object-cover text-center ml-[4.5px] mt-1 ' src={image3} alt="" />
 
             </div>
 
             <div>
-              <p className='font-semibold text-center mt-[20px]'>Shradhha k.</p>
-              <p className='text-gray-600 text-[10px] text-center'>Lorem, ipsum dolor.</p>
-              <p className='text-gray-500 text-[9px] text-center mt-[15px] mx-2'>"Lorem ipsum dolor sit amet consectetur
+              <p className='font-normal text-[#1e1e1e] pt-2 font-ABeeZee italic text-sm leading-5 text-center mt-[20px]'>Shradhha k.</p>
+              <p className='text-[#1e1e1e] text-[12px] font-abhaya-libre leading-[14px] font-medium text-center'>Lorem, ipsum dolor.</p>
+              <p className='text-[#1e1e1e] text-[14px] leading-4 line-clamp-2 font-abhaya-libre font-medium text-center mt-[15px] mx-2'>"Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Repellat tempore iure
                 similique"
               </p>
@@ -121,14 +121,14 @@ const Testimonials = () => {
 
           <div className='h-[150px] w-[215px] bg-white  rounded-2xl absolute top-[44%]'>
             <div className='h-[50px] w-[50px] bg-white absolute left-[39%]  bottom-[123px] rounded-[50%]'>
-              <img className='h-[40px] w-[40px] rounded-[50%] text-center ml-[4.5px] mt-1 ' src={image3_1} alt="" />
+              <img className='h-[40px] w-[40px] rounded-[50%] object-cover text-center ml-[4.5px] mt-1 ' src={image3_1} alt="" />
 
             </div>
 
             <div>
-              <p className='font-semibold text-center mt-[20px]'>John Cena</p>
-              <p className='text-gray-600 text-[10px] text-center'>Lorem, ipsum dolor bonjour.</p>
-              <p className='text-gray-500 text-[9px] text-center mt-[15px] mx-2'>"Lorem ipsum dolor sit amet consectetur
+              <p className='font-normal text-[#1e1e1e] font-ABeeZee italic text-sm leading-5 text-center mt-[20px]'>John Cena</p>
+              <p className='text-[#1e1e1e] text-[12px] font-abhaya-libre leading-[14px] font-medium text-center'>Lorem, ipsum dolor bonjour.</p>
+              <p className='text-[#1e1e1e] text-[14px] leading-4 font-abhaya-libre font-medium text-center mt-[15px] mx-2'>"Lorem ipsum dolor sit amet consectetur
                 similique"
               </p> 
             </div>

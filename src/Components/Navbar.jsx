@@ -43,12 +43,12 @@ const Navbar = () => {
                 </button>
               </div>
               <div className={`md:flex ${showMenu ? "block" : "hidden"}`}>
-                <ul className="flex md:flex-row font-abhaya-libre font-semibold flex-col gap-7 pt-3 ">
-                  <Link to="/">Home</Link>
+                <ul className="flex md:flex-row font-abhaya-libre font-extrabold flex-col gap-7 pt-3 ">
+                  <Link className="leading-5 text-lg" to="/">Home</Link>
                   <li className="relative group">
                     <div className="flex gap-2">
                       <div>
-                        <Link to="/Shop" className="flex gap-2">
+                        <Link className="leading-5 text-lg flex gap-2" to="/Shop" >
                           Shop{" "}
                         </Link>
                       </div>
@@ -62,25 +62,25 @@ const Navbar = () => {
                     {showMenu && (
                       <ol className="absolute text-black left-0 mt-2 font-poppins px-5 p-2 gap-12 font-semibold flex  bg-white shadow-lg h-40  rounded-md">
                         <li>
-                          <Link to="/living"> Living</Link>
+                          <Link className="leading-5 text-lg" to="/living"> Living</Link>
                           <ul className="mt-3 list-disc">
-                            <li className="text-nowrap ">Modular Sofas</li>
-                            <li className="text-nowrap ">2 and 3 seater sofas</li>
+                            <li className="text-nowrap font-normal text-[14px] leading-[16.91px] ">Modular Sofas</li>
+                            <li className="text-nowrap font-normal text-[14px] leading-[16.91px] ">2 and 3 seater sofas</li>
                           </ul>
                         </li>
                         <li>
-                          <Link to="/dining">Dining</Link>
+                          <Link className="leading-5 text-lg" to="/dining">Dining</Link>
                           <ul className="mt-3 list-disc">
-                            <li className="text-nowrap ">4-seater Dining</li>
-                            <li className="text-nowrap ">6- seater Dining</li>
+                            <li className="text-nowrap font-normal text-[14px] leading-[16.91px] ">4-seater Dining</li>
+                            <li className="text-nowrap font-normal text-[14px] leading-[16.91px] ">6- seater Dining</li>
                           </ul>
                         </li>
                         <li>
-                          <Link to="/bedroom">Bedroom </Link>
+                          <Link className="leading-5 text-lg" to="/bedroom">Bedroom </Link>
                           <ul className="mt-3 list-disc">
-                            <li className="text-nowrap ">King size Beds</li>
-                            <li className="text-nowrap ">Queen size Beds</li>
-                            <li className="text-nowrap ">Single size Beds</li>
+                            <li className="text-nowrap font-normal text-[14px] leading-[16.91px] ">King size Beds</li>
+                            <li className="text-nowrap font-normal text-[14px] leading-[16.91px] ">Queen size Beds</li>
+                            <li className="text-nowrap font-normal text-[14px] leading-[16.91px] ">Single size Beds</li>
                           </ul>
                         </li>
                       </ol>
@@ -88,10 +88,10 @@ const Navbar = () => {
                   </li>
 
                   {/* <Link to="/Shop">Shop</Link> */}
-                  <Link to="/OurStory">Our Story</Link>
-                  <Link to="/Faq">Faq</Link>
-                  <Link to="/Blog">Blog</Link>
-                  <Link to="/Contact">Contact</Link>
+                  <Link className="leading-5 text-lg" to="/OurStory">Our Story</Link>
+                  <Link className="leading-5 text-lg" to="/Faq">Faq</Link>
+                  <Link className="leading-5 text-lg" to="/Blog">Blog</Link>
+                  <Link className="leading-5 text-lg" to="/Contact">Contact</Link>
                 </ul>
               </div>
             </div>
@@ -115,15 +115,15 @@ const Navbar = () => {
         </div>
 
         <div className="flex justify-center">
-          <h1 className="absolute font-ABeeZee text-white text-[40px] md:text-[50px] lg:text-[60px] font-bold text-center mt-32 md:mt-32 lg:mt-36 italic">
+          <h1 className="absolute font-ABeeZee text-white text-[40px] md:text-[50px] lg:text-[60px] font-normal text-center mt-32 md:mt-32 lg:mt-36 italic">
             Make Your Interior More <br /> Minimalist & Modern
           </h1>
 
-          <div className="mt-[30rem] absolute border-2 bg-gray-400 bg-opacity-45 w-52 h-10 flex justify-between pl-2 pr-1 rounded-full ">
-            <div className="text-white flex items-center">
+          <div className="mt-[30rem] absolute border-2 bg-gray-400 bg-opacity-45 w-[344px] h-[56px] flex justify-between pl-2 pr-1 rounded-full ">
+            <div className="text-white flex pl-4 font-abhaya-libre items-center">
               <h1>Search furniture</h1>
             </div>
-            <div className="h-6 w-6 mt-1.5 bg-[#E58411] mr-1 rounded-full flex items-center justify-center">
+            <div className="h-[40px] w-[40px] mt-1.5 bg-[#E58411] mr-1 rounded-full flex items-center justify-center">
               <IoSearch size={16} />
             </div>
           </div>
