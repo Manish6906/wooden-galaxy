@@ -38,7 +38,7 @@ const App = () => {
     fetchDiningData();
     fetchBedroomData();
     fetchLivingData();
-  }, []);
+  }, );
   return (
     <Router>
       <Routes>
